@@ -2,4 +2,25 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="lavender">#8692f7</color>
+    <color name="pixelBlue">#4285F4</color>
+    <color name="gray">#aaa</color>
+    <color name="darkGray">#ff424242</color>
+    #A4C639<color name="leafyGreen">#A4C639</color>
+
+    <color name="blueGreen">#1DB7AE</color>
+
+
+
+    <!--    for night theme-->
+    <color name="manatee">#8989AC</color>
+    <color name="fiord">#454E6A</color>
+    <color name="cloudBurst">#20225D</color>
+    <color name="stratos">#07014F</color>
+    <color name="blackRock">#020326</color>
+    <color name="darkSpace">#17153B</color>
+
+    <color name="red">#FF2B1B</color>
+
 </resources>
