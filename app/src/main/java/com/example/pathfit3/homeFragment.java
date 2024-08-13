@@ -36,6 +36,10 @@ public class homeFragment extends Fragment {
         crdLesson.setOnClickListener(v -> handleCardTopicClick(new lessonsFragment(),R.id.navigation_lesson));
         crdTutorial.setOnClickListener(v -> handleCardTopicClick(new tutorialsFragment(),R.id.navigation_tutorial));
 
+        crdAbout.setOnClickListener(v -> {Fragment aboutUsFrag = new aboutUsFragment();
+            FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
+            fm.replace(R.id.frame_layout,aboutUsFrag).commit();});
+
 
     }
 
