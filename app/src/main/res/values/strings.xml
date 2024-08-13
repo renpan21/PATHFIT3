@@ -1,14 +1,89 @@
 <resources>
     <string name="app_name">PATHFIT3</string>
 
+
     <string name="title_activity_home_module">homeModule</string>
     <string name="title_home">Home</string>
     <string name="title_lesson">Lessons</string>
     <string name="title_tutorials">Tutorials</string>
     <string name="title_settings">Settings</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+
+    <!--Developers Name-->
+    <string name="dev_Lorence">Lorence Cerezo</string>
+    <string name="dev_Jerard">Jerard Maliwat</string>
+    <string name="dev_Jericho">Jericho Mercado</string>
+    <string name="dev_Reniel">Reniel John Supan</string>
+
+    <string name="cerezo_gmail">lorence2518cerezo@gmail.com</string>
+    <string name="maliwat_gmail">Jerardmaliwat07@gmail.com</string>
+
+
+
+    <string name="danceAs">Dance As:</string>
+
+
+    <!--lesson 1 title-->
+    <string name="lesson1_DancePeriods">Dance Periods</string>
+    <string name="lesson1_whatIsDance">What is Dance</string>
+    <string name="lesson1_PreHistoric">Pre-Historic</string>
+    <string name="lesson1_AncientEgypt">Ancient Egypt</string>
+    <string name="lesson1_AncientGreek">Ancient Greek</string>
+    <string name="lesson1_AncientRome">Ancient Rome</string>
+    <string name="lesson1_CatolicChurchInEurope">Catholic Church In Europe</string>
+    <string name="lesson1_DarknEarlyMiddleAge">Dark And Early Middle Ages</string>
+    <string name="lesson1_EarlyRenaissance">Early Renaissance</string>
+    <string name="lesson1_EuropeIn15n16Century">Europe in 15th and 16th Century</string>
+    <string name="lesson1_BenefitOfDance">Benefit Of Dance</string>
+
+    <string name="lesson2_natureOfDance">Nature Of Dance</string>
+
+
+
+
+    <string name="DanceTopic">Is the movement of the body in a rhythmic way, usually to music and within given space, for the purpose of expressing and idea or emotion
+    , releasing energy, or simply taking delight in movement. \n \nIs an expresssion of the body, following rhythmic patterns and is accompanied by music. From Primitive man expressing emotions
+    ins such events such as birth, death marriage, war, among other things, dance has evolved to modern forms of social gatherings. \n \n is one of the oldest and most popular forms of exercise.
+    </string>
+
+    <!--prehistoric topic-->
+    <string name="prehistoric_Topic">A major form of religious ritual and social expression with primitive cultures. A way of expressing and tribal unity and strength.\n \n An approach for courtship and mating \n \n A means of worship communication and therapeutic experience.</string>
+
+
+    <!--Ancient egypt-->
+    <string name="ancient_egypt_Topic">Become a fullblown and was richly recorded. It is also reflected in wall paintings, reliefs and in literary record in hieroglyphs. \n \n As a medium of religious expression.</string>
+
+    <!--Ancient greek-->
+
+    <string name="ancient_greek_Topic">Is an to military education, And as a form of entertainment display</string>
+
+    <!--Ancient rome-->
+    <string name="ancient_rome_Topic">In the Roman era They stopped valuing such qualities in arts as the nations grew wealthy and powerful. The romans ceased to create and perform within the arts themselves.</string>
+
+    <!--Catholic Church-->
+
+    <string name="catolic_church_Topic">The Christian Fathers approved the used of dance, provided that its form and intent were holy and profound. As dances then became part of worships and church activities</string>
+
+    <!--Dark and Early middle ages-->
+    <string name="darkMiddleAges_Topic">They performed dance in the village squares to welcome the feudal lords in the castles. \n \n The common people amused themselves by doing dances that were social in character. it is also the beginning of Social Dancing.\n \n
+        Two types of dance performed by peasants. \n \n
+        Round dance: dancers hold each other by hand forming a long chain and move about in an open closed circle. \n \n
+        Couple Dance: It was not as popular than round dance as it was considered scandalous when first seen.
+    </string>
+
+
+    <!-- Renaissance-->
+    <string name="renaissance_Topic">Was wholly accepted in courts as a gradual increases of the capitalist class produced patrons of learning and arts in Europe. \n\n Dance and art in general gains impetus \n\n The entertainers now become valuable appendage to the courts of Italy and France.</string>
+
+
+    <!--Europe in 15th and 16th century-->
+    <string name="europe15th_Topic">More court dances performed by nobility came about as well as rise of art in ballet in Italy and France. \n\n Several other dance forms continued to sprout and spread across several countries.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+
+
+
 
 </resources>
