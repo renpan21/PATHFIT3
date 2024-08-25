@@ -18,7 +18,6 @@
     <string name="maliwat_gmail">Jerardmaliwat07@gmail.com</string>
 
 
-
     <string name="danceAs">Dance As:</string>
 
 
@@ -36,8 +35,6 @@
     <string name="lesson1_BenefitOfDance">Benefit Of Dance</string>
 
     <string name="lesson2_natureOfDance">Nature Of Dance</string>
-
-
 
 
     <string name="DanceTopic">Is the movement of the body in a rhythmic way, usually to music and within given space, for the purpose of expressing and idea or emotion
@@ -80,10 +77,83 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="benefitsOfDance_Physical">Physical</string>
+    <string name="benefitsOfDance_PhysicalTopic">Develop cardiovascular endurance\n
+    Improves coordination, balance, flexibility and body composition.\n
+    Lower risk cardiovascular disease.\m
+    Lower body mass index.\n
+    Lower resting heart.\n
+    Improves lipid metabolism.\n
+    Enable joint mobility.\n
+    Helps improve and maintain bone density.
+    </string>
+
+    <string name="benefitsOfDance_mental_Emotional">Mental/Emotional</string>
+    <string name="benefitsOfDance_mental_EmotionalTopic">Help keep the brain sharp.\n
+    Decrease incidence of Dementia and Alzheimers Disease.\n
+    Decrease depressive symptoms.\n
+    Increase self-esteem and improves body image.\n
+    Aids in releasing emotional and physical tension.
+    </string>
+
+    <string name="benefitsOfDance_Social">Social</string>
+    <string name="benefitsOfDance_SocialTopic">Give sense of togetherness within group.\n
+    Encourages positive social interaction and interpersonal relationship in group.\n
+    Contributes to the individuals for self-actualization in society.\n
+    </string>
+    <string name="benefitsOfDance_Cultural">Cultural</string>
+    <string name="benefitsOfDance_CulturalTopic">Promotes cultural values.</string>
 
 
+    <string name="traditionalDance_FolknEthnic">Traditional Dances(Folk and Ethnic).</string>
+    <string name="traditionalDance_FolknEthnicTopic">Are dances indigenous communities that show cultural traits of people i specific time and place.\n
+    Customs and traditions through dance steps and costumes are preserved in traditional dance.
+    </string>
+    <string name="threeTypesofSocialDances">Three Types of Social Dances.</string>
+    <string name="threeTypesofSocialDancesTopic">Ritual Dance.\n
 
 
+    Life Cycle Dance.\n
+
+    Occupational Dance.\n
+    Occupational dance is a form of art that expresses the hardworking value of Filipinos. from different places in the country by showing their local culture and livelihood. The. theme of the folk dance would differ depending on where they live - near the seas, in. the fields, by the mountains, etc.
+    </string>
+
+    <string name="traditionalFolkDance">Folk Dance</string>
+    <string name="traditionalFolkDanceTopic">According to geographical locations, Folk Dances can be:/n
+    National
+    Dances with common basic movements, with slight variations.\n\n
+    Local/Regional\n
+    Dances that are unique to certain localities only.
+    </string>
+    <string name="traditionalModernContemporary">Modern And Contemporary Dance</string>
+    <string name="traditionalModernContemporaryTopic">Modern Dance:
+    is the style of dancing where dancers are free to express their feelings through movements.\n\n
+    Contemporary Dance:\n
+    incorporate the strong legwork and balance off ballet and trunk movements of modern dance.
+    </string>
+    <string name="cheerDance">CheerDance</string>
+    <string name="cheerDanceTopic">A combination of cheering and dancing.\n\n
+    Components include the mandatory cheer as well aas number of gymnastics and acrobatic moves such as cartwheels and hand springs
+    </string>
+    <string name="streetDance">StreetDance</string>
+    <string name="streetDanceTopic">HipHop:\n
+    is a dance style performed to hip-hop music and usually dance in the street.\n
+    it includes a wide range of styles primarily breaking, locking and popping.
+    </string>
+    <string name="balletDance">Ballet</string>
+    <string name="balletDanceTopic">It was taken from  the Italian word "BALLARE" meaning TO DANCE, and "BALLO" referring to DANCES PERFORMED IN BALLROOMS.\n
+    combinations of arts of dancing poetry, music, painting.\n
+    An artistic, programmatic, scenic dance accompanied by music.
+    </string>
+    <string name="ballroomDance">Ballroom</string>
+    <string name="ballroomDanceTopic">Is a set of partner dances, which are enjoyed both socially and competitively around the world.\n
+    because of its performance and entertainment aspects, ballroom dance is also widely enjoyed on stage, film and televisions.
+    </string>
+    <string name="festivalDance">Festival Dance</string>
+    <string name="festivalDanceTopic">Are cultural dances performed to the strong beats of percussion instruments by a community of people sharing the same culture usually done in honor of a patron saint or as a thanksgiving for a bountiful harvest.\n
+    Festival Dances may be religious or secular in nature.
+    </string>
 
 
 </resources>

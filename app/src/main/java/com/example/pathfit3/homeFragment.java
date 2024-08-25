@@ -1,5 +1,6 @@
 package com.example.pathfit3;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
@@ -36,9 +37,15 @@ public class homeFragment extends Fragment {
         crdLesson.setOnClickListener(v -> handleCardTopicClick(new lessonsFragment(),R.id.navigation_lesson));
         crdTutorial.setOnClickListener(v -> handleCardTopicClick(new tutorialsFragment(),R.id.navigation_tutorial));
 
-        crdAbout.setOnClickListener(v -> {Fragment aboutUsFrag = new aboutUsFragment();
+        crdAbout.setOnClickListener(v -> {
+            Fragment aboutUsFrag = new aboutUsFragment();
             FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
             fm.replace(R.id.frame_layout,aboutUsFrag).commit();});
+
+        crdQuiz.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), quizActivity.class);
+            startActivity(intent);
+        });
 
 
     }
@@ -48,7 +55,6 @@ public class homeFragment extends Fragment {
         if (getActivity() != null) {
             FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
             fm.replace(R.id.frame_layout, fragment);
-            fm.addToBackStack(null); //adds the transaction to the back stack
             fm.commit();
             bottomNav.setSelectedItemId(navItemId);
         }
