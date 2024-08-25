@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".lessonsFragment">
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
@@ -34,66 +33,94 @@
         android:layout_height="wrap_content"
         android:text="Lessons"
         android:textSize="45sp"
+        style="@style/textColor"
         android:layout_marginStart="30dp"
         android:fontFamily="@font/tsukishimi_rounded"/>
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/txtLessons"
+        android:id="@+id/cardViewLesson1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtLessons"
-        android:layout_marginTop="16dp">
-
-        <!-- ImageView -->
-        <ImageButton
-            android:id="@+id/lesson1_image"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:scaleType="fitCenter"
-            android:contentDescription="Start Lesson1"
-            android:src="@drawable/settings"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-        <!-- ProgressBar -->
-        <ProgressBar
-            android:id="@+id/progress_bar"
-            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="16dp"
-            android:progressDrawable="@drawable/progress_lessons"
-            android:indeterminate="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-        <!-- Centered TextView -->
-
-        <!-- Progress TextView -->
-
+        android:layout_margin="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:contentPadding="20dp"
+        style="@style/cardBackGround">
         <TextView
+            android:id="@+id/lessons"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:text="Lesson 1"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/progress_bar"
-            app:layout_constraintHorizontal_bias="0.268"
-            app:layout_constraintStart_toEndOf="@+id/lesson1_image"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.473" />
+            android:textSize="32sp"
+            android:textStyle="bold"
+            style="@style/textColorCloud"/>
 
-        <TextView
-            android:id="@+id/progress_text"
+        <LinearLayout
+            android:id="@+id/lessonLayout1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/arvo"
-            android:text="Progress: 0%"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/progress_bar"/>
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="50dp"
+            >
+            <TextView
+                android:id="@+id/lesson1_DancePeriods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lesson1_DancePeriods"
+                android:textSize="18sp"
+                style="@style/textColorCloud"
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                />
+            <TextView
+                android:id="@+id/lesson1_BenefitOfDance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lesson1_BenefitOfDance"
+                android:textSize="18sp"
+                style="@style/textColorCloud"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/cardViewLesson1"
+        android:id="@+id/cardViewLesson2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:contentPadding="20dp"
+        style="@style/cardBackGround">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lesson 2"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            style="@style/textColorCloud"/>
+
+        <LinearLayout
+            android:id="@+id/lessonLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="50dp"
+            >
+
+            <TextView
+                android:id="@+id/lesson2_natureOfDance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lesson2_natureOfDance"
+                android:textSize="18sp"
+                style="@style/textColorCloud"
+
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>
