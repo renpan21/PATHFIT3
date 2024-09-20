@@ -1,4 +1,4 @@
-package com.example.pathfit3;
+package com.example.pathfit3.quizQnA;
 
 public class dancePeriodsQnAns {
     public static String question[] ={

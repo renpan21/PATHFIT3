@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/screenBackGround"
-    tools:context=".quiz.dancePeriodsQuizEasyActivity">
+    tools:context=".quiz.quiz_dancePeriod_hard">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/total_question"
-        android:text="Total Questions "
+        android:text="Total Questions"
         android:layout_centerHorizontal="true"
         android:textSize="20dp"/>
     <TextView

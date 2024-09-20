@@ -1,4 +1,4 @@
-package com.example.pathfit3;
+package com.example.pathfit3.fragments;
 
 import android.os.Bundle;
 
@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+
+import com.example.pathfit3.R;
 
 public class aboutUsFragment extends Fragment {
     CardView crdCerezo, crdMercado;
