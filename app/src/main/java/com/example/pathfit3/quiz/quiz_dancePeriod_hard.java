@@ -1,6 +1,5 @@
-package com.example.pathfit3;
+package com.example.pathfit3.quiz;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -9,11 +8,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+import com.example.pathfit3.R;
+import com.example.pathfit3.quizQnA.dancePeriodsHardQnA;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements View.OnClickListener {
+public class quiz_dancePeriod_hard extends AppCompatActivity implements View.OnClickListener {
 
     TextView questionTextView;
     TextView timerTextView;
@@ -26,7 +34,7 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
     String selectedAnswer = "";
     Button selectedButton = null;
 
-    List<Question> questions;
+    List<quiz_dancePeriod_hard.Question> questions;
     private CountDownTimer countDownTimer;
     private final long TIMER_DURATION = 10000;
     private final long TIMER_INTERVAL = 1000;
@@ -34,7 +42,7 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dance_periods_quiz_easy);
+        setContentView(R.layout.activity_quiz_dance_period_hard);
 
         questionTextView = findViewById(R.id.question);
         timerTextView = findViewById(R.id.timer);
@@ -86,7 +94,7 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
             return;
         }
 
-        Question currentQuestion = questions.get(currentQuestionIndex);
+        quiz_dancePeriod_hard.Question currentQuestion = questions.get(currentQuestionIndex);
         if (questionTextView != null) {
             questionTextView.setText(currentQuestion.questionText);
             ansA.setText(currentQuestion.choices[0]);
@@ -137,11 +145,11 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
     private void initializeQuestions() {
         questions = new ArrayList<>();
 
-        for (int i = 0; i < dancePeriodsQnAns.question.length; i++) {
-            questions.add(new Question(
-                    dancePeriodsQnAns.question[i],
-                    dancePeriodsQnAns.choices[i],
-                    dancePeriodsQnAns.correctAnswers[i]
+        for (int i = 0; i < dancePeriodsHardQnA.question.length; i++) {
+            questions.add(new quiz_dancePeriod_hard.Question(
+                    dancePeriodsHardQnA.question[i],
+                    dancePeriodsHardQnA.choices[i],
+                    dancePeriodsHardQnA.correctAnswers[i]
             ));
         }
     }

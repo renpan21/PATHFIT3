@@ -1,4 +1,4 @@
-package com.example.pathfit3;
+package com.example.pathfit3.fragments;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -13,6 +13,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.pathfit3.R;
+import com.example.pathfit3.lessonsCardItem;
+import com.example.pathfit3.lessonsViewAdapter;
 
 import java.util.ArrayList;
 

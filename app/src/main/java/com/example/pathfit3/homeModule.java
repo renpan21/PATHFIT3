@@ -3,9 +3,8 @@ package com.example.pathfit3;
 import android.os.Bundle;
 
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.example.pathfit3.fragments.homeFragment;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -13,6 +12,9 @@ import androidx.fragment.app.FragmentTransaction;
 
 
 import com.example.pathfit3.databinding.ActivityHomeModuleBinding;
+import com.example.pathfit3.fragments.lessonsFragment;
+import com.example.pathfit3.fragments.settingsFragment;
+import com.example.pathfit3.fragments.tutorialsFragment;
 
 public class homeModule extends AppCompatActivity {
 

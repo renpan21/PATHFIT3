@@ -1,4 +1,4 @@
-package com.example.pathfit3;
+package com.example.pathfit3.fragments;
 
 import android.os.Bundle;
 import androidx.cardview.widget.CardView;
@@ -11,6 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.pathfit3.R;
+import com.example.pathfit3.fragments.benefitsOfDanceFragment;
+import com.example.pathfit3.fragments.dancePeriodFragment;
+import com.example.pathfit3.fragments.natureOfdiffDancesFragment;
 
 import java.util.ArrayList;
 import java.util.List;
