@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.pathfit3.AboutUs;
 import com.example.pathfit3.R;
 import com.example.pathfit3.quiz.quizActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -20,7 +21,7 @@ public class homeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         crdGetID(view);
         crdClickListenerAction();
@@ -36,13 +37,13 @@ public class homeFragment extends Fragment {
     }
 
     public void crdClickListenerAction(){
-        crdLesson.setOnClickListener(v -> handleCardTopicClick(new lessonsFragment(),R.id.navigation_lesson));
-        crdTutorial.setOnClickListener(v -> handleCardTopicClick(new tutorialsFragment(),R.id.navigation_tutorial));
+        crdLesson.setOnClickListener(v -> handleCrdClick(new lessonsFragment(),R.id.navigation_lesson));
+        crdTutorial.setOnClickListener(v -> handleCrdClick(new tutorialsFragment(),R.id.navigation_tutorial));
 
         crdAbout.setOnClickListener(v -> {
-            Fragment aboutUsFrag = new aboutUsFragment();
-            FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
-            fm.replace(R.id.frame_layout,aboutUsFrag).commit();});
+            Intent intent = new Intent(getActivity(),AboutUs.class);
+            startActivity(intent);
+        });
 
         crdQuiz.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), quizActivity.class);
@@ -52,7 +53,7 @@ public class homeFragment extends Fragment {
 
     }
 
-    public void handleCardTopicClick(Fragment fragment, int navItemId){
+    public void handleCrdClick(Fragment fragment, int navItemId){
 
         if (getActivity() != null) {
             FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
