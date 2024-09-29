@@ -12,9 +12,11 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
+        multiDexEnabled = true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+
 
     buildTypes {
         release {
@@ -35,8 +37,11 @@ android {
 }
 
 dependencies {
-
+    val multidex_version = "2.0.1"
+    implementation("androidx.multidex:multidex:$multidex_version")
     implementation(libs.appcompat)
+    implementation(libs.androidx.core) 
+    implementation(libs.androidx.core)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)

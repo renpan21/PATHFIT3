@@ -15,30 +15,30 @@ public class dancePeriodsQnAns {
     };
 
     public static String choices[][] = {
-            {"Pre-Historic era","Ancient Egypt era","Ancient Greek era","Ancient Rome era"},
-            {"Pre-Historic era","Ancient Egypt era","Ancient Rome era","Catholic Church in Europe era"},
-            {"Pre-Historic era","Ancient Egypt era","Ancient Rome era","Catholic Church in Europe era"},
-            {"Pre-Historic era","Ancient Egypt era","Ancient Rome era","Catholic Church in Europe era"},
-            {"Ancient Egypt era","Ancient Greek era","Pre-Historic era","Ancient Rome era"},
-            {"Ancient Rome era","Catholic Church in Europe era","Dark and Early Middle Ages era","Pre-Historic era"},
-            {"Ancient Rome era","Catholic Church in Europe era","Pre-Historic era","Dark and Early Middle Ages era"},
-            {"The Renaissance era","Catholic Church in Europe era","Ancient Egypt era","Dark and Early Middle Ages era"},
-            {"The Renaissance era","Catholic Church in Europe era","Europe in 15th and 16th Century era","Dark and Early Middle Ages era"},
-            {"Europe in 15th and 16th Century era","Dark and Early Middle Ages era","Catholic Church in Europe era","The Renaissance era"}
+            {"Pre-Historic Era","Ancient Egypt Era","Ancient Greek Era","Ancient Rome Era"},
+            {"Pre-Historic Era","Ancient Egypt Era","Ancient Rome Era","Catholic Church in Europe Era"},
+            {"Pre-Historic Era","Ancient Egypt Era","Ancient Rome Era","Catholic Church in Europe Era"},
+            {"Pre-Historic Era","Ancient Egypt Era","Ancient Rome Era","Catholic Church in Europe Era"},
+            {"Ancient Egypt Era","Ancient Greek Era","Pre-Historic Era","Ancient Rome Era"},
+            {"Ancient Rome Era","Catholic Church in Europe Era","Dark and Early Middle Ages Era","Pre-Historic Era"},
+            {"Ancient Rome Era","Catholic Church in Europe Era","Pre-Historic Era","Dark and Early Middle Ages Era"},
+            {"The Renaissance Era","Catholic Church in Europe Era","Ancient Egypt Era","Dark and Early Middle Ages Era"},
+            {"The Renaissance Era","Catholic Church in Europe Era","Europe in 15th and 16th Century Era","Dark and Early Middle Ages Era"},
+            {"Europe in 15th and 16th Century Era","Dark and Early Middle Ages Era","Catholic Church in Europe Era","The Renaissance Era"}
 
     };
 
     public static String correctAnswers[] = {
-            "Google",
-            "Notepad",
-            "Youtube",
-            "Apple",
-            "Google",
-            "Notepad",
-            "Youtube",
-            "Apple",
-            "Google",
-            "Notepad"
+            "Pre-Historic Era",
+            "Ancient Egypt Era",
+            "Ancient Greek Era",
+            "Catholic Church in Europe Era",
+            "Ancient Rome Era",
+            "Dark and Early Middle Ages Era",
+            "Dark and Early Middle Ages Era",
+            "The Renaissance Era",
+            "Europe in 15th and 16th Century Era",
+            "Europe in 15th and 16th Century Era"
 
     };
 }

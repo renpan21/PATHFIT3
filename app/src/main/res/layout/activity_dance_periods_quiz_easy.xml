@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -8,17 +7,48 @@
     style="@style/screenBackGround"
     tools:context=".quiz.dancePeriodsQuizEasyActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/screenBackGround">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp">
+
+            <!-- Center TextView -->
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dance Period Quiz Easy"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/arvo"
+                style="@style/textColor"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/total_question"
         android:text="Total Questions "
+        android:fontFamily="@font/arvo"
         android:layout_centerHorizontal="true"
-        android:textSize="20dp"/>
+        android:textSize="20dp"
+        android:layout_below="@+id/toolbar"/>
     <TextView
         android:layout_marginTop="10dp"
         android:layout_below="@+id/total_question"
         android:id="@+id/timer"
+        android:fontFamily="@font/arvo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
@@ -32,16 +62,19 @@
         android:textStyle="bold"
         android:text="This will be the question"
         android:textColor="@color/white"
+        android:fontFamily="@font/arvo"
         android:textSize="24dp"
         android:textAlignment="center"
         android:layout_margin="20dp"
-        android:layout_above="@id/choices_layout"/>
+        android:layout_below="@+id/timer"
+        />
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/choices_layout"
+        android:layout_below="@id/question"
         android:layout_centerInParent="true"
         android:orientation="vertical">
 
@@ -89,5 +122,4 @@
         android:text="Submit"
         android:layout_below="@id/choices_layout"
         android:layout_marginTop="40dp"/>
-
 </RelativeLayout>

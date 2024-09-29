@@ -50,25 +50,26 @@ public class dancePeriodsHardQnA {
     };
 
     public static String correctAnswers[] = {
-            "Google",
-            "Notepad",
-            "Youtube",
-            "Apple",
-            "Google",
-            "Notepad",
-            "Youtube",
-            "Apple",
-            "Google",
-            "Notepad",
-            "Google",
-            "Notepad",
-            "Youtube",
-            "Apple",
-            "Google",
-            "Notepad",
-            "Youtube",
-            "Apple",
-            "Google",
-            "Notepad"
+            "False",                           // 1
+            "Ancient Egypt era",               // 2
+            "False",                           // 3
+            "False",                           // 4
+            "Catholic Church in Europe era",   // 5
+            "Dark and Early Middle Ages era",  // 6
+            "True",                            // 7
+            "False",                           // 8
+            "False",                           // 9
+            "True",                            // 10
+            "Dark and Early Middle Ages era",  // 11
+            "True",                            // 12
+            "Dark and Early Middle Ages era",  // 13
+            "True",                            // 14
+            "False",                           // 15
+            "True",                            // 16
+            "True",                            // 17
+            "False",                           // 18
+            "False",                           // 19
+            "True"                             // 20
     };
+
 }

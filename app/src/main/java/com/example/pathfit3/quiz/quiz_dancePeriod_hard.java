@@ -1,6 +1,7 @@
 package com.example.pathfit3.quiz;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -8,11 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.pathfit3.R;
 import com.example.pathfit3.quizQnA.dancePeriodsHardQnA;
@@ -23,20 +20,21 @@ import java.util.List;
 
 public class quiz_dancePeriod_hard extends AppCompatActivity implements View.OnClickListener {
 
-    TextView questionTextView;
-    TextView timerTextView;
-    Button ansA, ansB, ansC, ansD;
-    Button submitBtn;
+    private TextView questionTextView;
+    private TextView timerTextView;
+    private TextView totalQuestionTextView;
+    private Button ansA, ansB, ansC, ansD;
+    private Button submitBtn;
 
-    int score = 0;
-    int totalQuestion;
-    int currentQuestionIndex = 0;
-    String selectedAnswer = "";
-    Button selectedButton = null;
+    private int score = 0;
+    private int totalQuestion;
+    private int currentQuestionIndex = 0;
+    private String selectedAnswer = "";
+    private Button selectedButton = null;
 
-    List<quiz_dancePeriod_hard.Question> questions;
+    private List<quiz_dancePeriod_hard.Question> questions;
     private CountDownTimer countDownTimer;
-    private final long TIMER_DURATION = 10000;
+    private final long TIMER_DURATION = 61000;
     private final long TIMER_INTERVAL = 1000;
 
     @Override
@@ -46,6 +44,7 @@ public class quiz_dancePeriod_hard extends AppCompatActivity implements View.OnC
 
         questionTextView = findViewById(R.id.question);
         timerTextView = findViewById(R.id.timer);
+        totalQuestionTextView = findViewById(R.id.total_question);
         ansA = findViewById(R.id.ans_A);
         ansB = findViewById(R.id.ans_B);
         ansC = findViewById(R.id.ans_C);
@@ -57,7 +56,6 @@ public class quiz_dancePeriod_hard extends AppCompatActivity implements View.OnC
         ansC.setOnClickListener(this);
         ansD.setOnClickListener(this);
         submitBtn.setOnClickListener(this);
-
 
         initializeQuestions();
         Collections.shuffle(questions);
@@ -78,10 +76,10 @@ public class quiz_dancePeriod_hard extends AppCompatActivity implements View.OnC
             if (selectedAnswer.equals(questions.get(currentQuestionIndex).correctAnswer)) {
                 score++;
             }
+            selectedAnswer = "";
             currentQuestionIndex++;
             loadNewQuestion();
         } else {
-
             selectedAnswer = clickedButton.getText().toString();
             selectedButton = clickedButton;
             clickedButton.setBackgroundColor(Color.MAGENTA);
@@ -103,12 +101,15 @@ public class quiz_dancePeriod_hard extends AppCompatActivity implements View.OnC
             ansD.setText(currentQuestion.choices[3]);
         }
 
-
+        updateQuestionIndex();
         startTimer();
     }
 
+    void updateQuestionIndex() {
+        totalQuestionTextView.setText("Question " + (currentQuestionIndex + 1) + " of " + totalQuestion);
+    }
+
     void finishQuiz() {
-        // Stop the timer when the quiz ends
         if (countDownTimer != null) {
             countDownTimer.cancel();
         }
@@ -118,7 +119,13 @@ public class quiz_dancePeriod_hard extends AppCompatActivity implements View.OnC
         new AlertDialog.Builder(this)
                 .setTitle(passStatus)
                 .setMessage("Score is " + score + " out of " + totalQuestion)
-                .setPositiveButton("Restart", (dialogInterface, i) -> restartQuiz())
+                .setPositiveButton("Start Next Quiz", (dialogInterface, i) -> {
+                    Intent intent = new Intent(this, benefitOfDanceQuizEz.class);
+                    startActivity(intent);
+                    finish();
+                })
+                .setNeutralButton("Restart Quiz", (dialogInterface, i) -> restartQuiz())
+                .setNegativeButton("Finish Quiz", (dialogInterface, i) -> finish())
                 .setCancelable(false)
                 .show();
     }
@@ -126,7 +133,7 @@ public class quiz_dancePeriod_hard extends AppCompatActivity implements View.OnC
     void restartQuiz() {
         score = 0;
         currentQuestionIndex = 0;
-        Collections.shuffle(questions);  // Shuffle questions again for the restart
+        Collections.shuffle(questions);
         loadNewQuestion();
     }
 
@@ -155,27 +162,25 @@ public class quiz_dancePeriod_hard extends AppCompatActivity implements View.OnC
     }
 
     private void startTimer() {
-        // Cancel timer
         if (countDownTimer != null) {
             countDownTimer.cancel();
         }
 
         countDownTimer = new CountDownTimer(TIMER_DURATION, TIMER_INTERVAL) {
             @Override
-            public void onTick(long millisUntilFinished) {
-                long seconds = millisUntilFinished / 1000;
+            public void onTick(long secUntilFinished) {
+                long seconds = secUntilFinished / 1000;
                 timerTextView.setText(String.format("Time Left: %02d:%02d", seconds / 60, seconds % 60));
             }
 
             @Override
             public void onFinish() {
-
                 if (selectedButton != null) {
                     selectedButton.setBackgroundColor(Color.WHITE);
-                    selectedButton = null; // Clear the reference
+                    selectedButton = null;
                 }
                 currentQuestionIndex++;
-                loadNewQuestion();  // Load the next question
+                loadNewQuestion();
             }
         }.start();
     }
