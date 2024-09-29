@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/screenBackGround"
-    tools:context=".quiz.quiz_dancePeriod_hard">
+    tools:context=".quiz.benefitOfDanceQuizEz">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -25,7 +25,7 @@
                 android:id="@+id/toolbar_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dance Periods Quiz Hard"
+                android:text="Benefits of Dance Quiz Easy"
                 android:textSize="20sp"
                 android:textAlignment="center"
                 android:fontFamily="@font/arvo"
@@ -123,5 +123,4 @@
         android:text="Submit"
         android:layout_below="@id/choices_layout"
         android:layout_marginTop="40dp"/>
-
 </RelativeLayout>

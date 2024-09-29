@@ -1,6 +1,5 @@
 package com.example.pathfit3.quiz;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -10,24 +9,30 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
 import com.example.pathfit3.R;
-import com.example.pathfit3.quizQnA.dancePeriodsQnAns;
+
+import com.example.pathfit3.quizQnA.benefitOfDanceQnA;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements View.OnClickListener {
-
-    private TextView questionTextView;
-    private TextView timerTextView;
-    private TextView totalQuestionTextView;
+public class benefitOfDanceQuizEz extends AppCompatActivity implements View.OnClickListener {
+    private TextView questionTxt;
+    private TextView timerTxt;
+    private TextView totalQuestionsTxt;
     private Button ansA, ansB, ansC, ansD;
     private Button submitBtn;
 
     private int score = 0;
-    private int totalQuestion;
-    private int currentQuestionIndex = 0;
+    private int totalQuestions;
+    private int currQuestionIndex = 0;
     private String selectedAnswer = "";
     private Button selectedButton = null;
 
@@ -39,11 +44,12 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dance_periods_quiz_easy);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_benefit_of_dance_quiz_ez);
 
-        questionTextView = findViewById(R.id.question);
-        timerTextView = findViewById(R.id.timer);
-        totalQuestionTextView = findViewById(R.id.total_question);
+        questionTxt = findViewById(R.id.question);
+        timerTxt = findViewById(R.id.timer);
+        totalQuestionsTxt = findViewById(R.id.total_question);
         ansA = findViewById(R.id.ans_A);
         ansB = findViewById(R.id.ans_B);
         ansC = findViewById(R.id.ans_C);
@@ -58,12 +64,16 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
 
         initializeQuestions();
         Collections.shuffle(questions);
-        totalQuestion = questions.size();
+        totalQuestions = questions.size();
 
         loadNewQuestion();
-    }
 
-    @Override
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+    }
     public void onClick(View view) {
         ansA.setBackgroundColor(Color.WHITE);
         ansB.setBackgroundColor(Color.WHITE);
@@ -72,11 +82,11 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
 
         Button clickedButton = (Button) view;
         if (clickedButton.getId() == R.id.submit_btn) {
-            if (selectedAnswer.equals(questions.get(currentQuestionIndex).correctAnswer)) {
+            if (selectedAnswer.equals(questions.get(currQuestionIndex).correctAnswer)) {
                 score++;
             }
             selectedAnswer = "";
-            currentQuestionIndex++;
+            currQuestionIndex++;
             loadNewQuestion();
         } else {
             selectedAnswer = clickedButton.getText().toString();
@@ -86,14 +96,14 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
     }
 
     void loadNewQuestion() {
-        if (currentQuestionIndex == totalQuestion) {
+        if (currQuestionIndex == totalQuestions) {
             finishQuiz();
             return;
         }
 
-        Question currentQuestion = questions.get(currentQuestionIndex);
-        if (questionTextView != null) {
-            questionTextView.setText(currentQuestion.questionText);
+        Question currentQuestion = questions.get(currQuestionIndex);
+        if (questionTxt != null) {
+            questionTxt.setText(currentQuestion.questionText);
             ansA.setText(currentQuestion.choices[0]);
             ansB.setText(currentQuestion.choices[1]);
             ansC.setText(currentQuestion.choices[2]);
@@ -105,7 +115,7 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
     }
 
     void updateQuestionIndex() {
-        totalQuestionTextView.setText("Question " + (currentQuestionIndex + 1) + " of " + totalQuestion);
+        totalQuestionsTxt.setText("Question " + (currQuestionIndex + 1) + " of " + totalQuestions);
     }
 
     void finishQuiz() {
@@ -113,13 +123,13 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
             countDownTimer.cancel();
         }
 
-        String passStatus = score > totalQuestion * 0.60 ? "Passed" : "Failed";
+        String passStatus = score > totalQuestions * 0.60 ? "Passed" : "Failed";
 
         new AlertDialog.Builder(this)
                 .setTitle(passStatus)
-                .setMessage("Score is " + score + " out of " + totalQuestion)
+                .setMessage("Score is " + score + " out of " + totalQuestions)
                 .setPositiveButton("Start Next Quiz", (dialogInterface, i) -> {
-                    Intent intent = new Intent(this, quiz_dancePeriod_hard.class);
+                    Intent intent = new Intent(this, benefitOfDanceHardQuiz.class);
                     startActivity(intent);
                     finish();
                 })
@@ -131,7 +141,7 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
 
     void restartQuiz() {
         score = 0;
-        currentQuestionIndex = 0;
+        currQuestionIndex = 0;
         Collections.shuffle(questions);
         loadNewQuestion();
     }
@@ -151,11 +161,11 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
     private void initializeQuestions() {
         questions = new ArrayList<>();
 
-        for (int i = 0; i < dancePeriodsQnAns.question.length; i++) {
+        for (int i = 0; i < benefitOfDanceQnA.question.length; i++) {
             questions.add(new Question(
-                    dancePeriodsQnAns.question[i],
-                    dancePeriodsQnAns.choices[i],
-                    dancePeriodsQnAns.correctAnswers[i]
+                    benefitOfDanceQnA.question[i],
+                    benefitOfDanceQnA.choices[i],
+                    benefitOfDanceQnA.correctAnswers[i]
             ));
         }
     }
@@ -169,7 +179,7 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
             @Override
             public void onTick(long secUntilFinished) {
                 long seconds = secUntilFinished / 1000;
-                timerTextView.setText(String.format("Time Left: %02d:%02d", seconds / 60, seconds % 60));
+                timerTxt.setText(String.format("Time Left: %02d:%02d", seconds / 60, seconds % 60));
             }
 
             @Override
@@ -178,7 +188,7 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
                     selectedButton.setBackgroundColor(Color.WHITE);
                     selectedButton = null;
                 }
-                currentQuestionIndex++;
+                currQuestionIndex++;
                 loadNewQuestion();
             }
         }.start();
