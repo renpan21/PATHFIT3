@@ -1,5 +1,6 @@
 package com.example.pathfit3;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -16,7 +17,7 @@ import com.example.pathfit3.fragments.lessonsFragment;
 import com.example.pathfit3.fragments.settingsFragment;
 import com.example.pathfit3.fragments.tutorialsFragment;
 
-public class homeModule extends AppCompatActivity {
+public class homeModule extends BaseActivity     {
 
     private ActivityHomeModuleBinding binding;
 
@@ -26,6 +27,12 @@ public class homeModule extends AppCompatActivity {
         //        EdgeToEdge.enable(this);
         //        setContentView(R.layout.activity_home_module);
         replaceFragment(new homeFragment());
+        startService(new Intent(this, musicPlayer.class));
+
+        // Just for testing
+        if (mMusicPlayer != null) {
+            mMusicPlayer.resumeMusic();
+        }
 
 
         binding = ActivityHomeModuleBinding.inflate(getLayoutInflater());

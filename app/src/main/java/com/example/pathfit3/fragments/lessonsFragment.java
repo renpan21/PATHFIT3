@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.pathfit3.BaseActivity;
 import com.example.pathfit3.R;
 import com.example.pathfit3.fragments.benefitsOfDanceFragment;
 import com.example.pathfit3.fragments.dancePeriodFragment;
@@ -33,8 +34,14 @@ public class lessonsFragment extends Fragment {
 
         initializeViews(view);
         setupClickListeners();
-
+        playMusic();
         return view;
+
+    }
+    private void playMusic() {
+        if (getActivity() instanceof BaseActivity) {
+            ((BaseActivity) getActivity()).playMusic();
+        }
     }
 
     private void initializeViews(View view) {
