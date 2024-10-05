@@ -40,7 +40,7 @@ dependencies {
     val multidex_version = "2.0.1"
     implementation("androidx.multidex:multidex:$multidex_version")
     implementation(libs.appcompat)
-    implementation(libs.androidx.core) 
+//    implementation(libs.androidx.core)
     implementation(libs.androidx.core)
     implementation(libs.material)
     implementation(libs.activity)

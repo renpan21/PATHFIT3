@@ -34,15 +34,15 @@ public class lessonsFragment extends Fragment {
 
         initializeViews(view);
         setupClickListeners();
-        playMusic();
+//        playMusic();
         return view;
 
     }
-    private void playMusic() {
-        if (getActivity() instanceof BaseActivity) {
-            ((BaseActivity) getActivity()).playMusic();
-        }
-    }
+//    private void playMusic() {
+//        if (getActivity() instanceof BaseActivity) {
+//            ((BaseActivity) getActivity()).playMusic();
+//        }
+//    }
 
     private void initializeViews(View view) {
         cardViewLesson1 = view.findViewById(R.id.cardViewLesson1);
