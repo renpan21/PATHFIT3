@@ -1,14 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    style="@style/screenBackGround"
     tools:context=".fragments.tutorialsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        >
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
 
-</FrameLayout>
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ballRoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                style="@style/cardBackGround">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Ballroom"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/arvo"
+                   style="@style/textColor"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/hipHop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                style="@style/cardBackGround">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hip-Hop"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/arvo"
+                    style="@style/textColor"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cheerDance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                style="@style/cardBackGround">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Cheer Dance"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/arvo"
+                    style="@style/textColor"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/folkDance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                style="@style/cardBackGround">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Folk Dance"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/arvo"
+                    style="@style/textColor"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sinulog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                style="@style/cardBackGround">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Festival Dance"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/arvo"
+                    style="@style/textColor"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

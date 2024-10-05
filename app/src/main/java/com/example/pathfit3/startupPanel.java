@@ -21,9 +21,9 @@ public class startupPanel extends BaseActivity {
         startService(new Intent(this, musicPlayer.class));
 
         // Just for testing
-        if (mMusicPlayer != null) {
-            mMusicPlayer.resumeMusic();
-        }
+//        if (mMusicPlayer != null) {
+//            mMusicPlayer.resumeMusic();
+//        }
         initViews();
         startService(new Intent(this, musicPlayer.class));
         btnGetStarted.setOnClickListener(v -> {

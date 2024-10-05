@@ -30,9 +30,9 @@ public class homeModule extends BaseActivity     {
         startService(new Intent(this, musicPlayer.class));
 
         // Just for testing
-        if (mMusicPlayer != null) {
-            mMusicPlayer.resumeMusic();
-        }
+//        if (mMusicPlayer != null) {
+//            mMusicPlayer.resumeMusic();
+//        }
 
 
         binding = ActivityHomeModuleBinding.inflate(getLayoutInflater());
