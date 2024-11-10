@@ -31,7 +31,7 @@
         android:id="@+id/txtLessons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lessons"
+        android:text="@string/title_lesson"
         android:textSize="45sp"
         style="@style/textColor"
         android:layout_marginStart="30dp"

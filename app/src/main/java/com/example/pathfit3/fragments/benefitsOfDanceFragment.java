@@ -1,13 +1,18 @@
 package com.example.pathfit3.fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -17,6 +22,9 @@ import android.view.ViewGroup;
 import com.example.pathfit3.R;
 import com.example.pathfit3.lessonsCardItem;
 import com.example.pathfit3.lessonsViewAdapter;
+import com.example.pathfit3.quiz.benefitOfDanceQuizEz;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 
 import java.util.ArrayList;
 
@@ -33,12 +41,27 @@ public class benefitsOfDanceFragment extends Fragment {
     Runnable dialogRunnable;
     boolean isDialogShown = false;
     boolean isDialogScheduled = false;
-
+    BottomNavigationView bottomNav;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_benefits_of_dance, container, false);
+        View view =  inflater.inflate(R.layout.fragment_benefits_of_dance, container, false);
+        bottomNav = requireActivity().findViewById(R.id.nav_view);
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.frame_layout, new lessonsFragment());
+                fragmentTransaction.commit();
+
+                if (bottomNav != null) {
+                    bottomNav.setSelectedItemId(R.id.navigation_lesson);
+                }
+            }
+        });
+        return view;
     }
 
     @Override
@@ -60,7 +83,6 @@ public class benefitsOfDanceFragment extends Fragment {
             markLessonAsRead(position);
             if (areAllLessonsRead()) {
                 if (!isDialogShown && !isDialogScheduled) {
-
                     showDialog();
                 }
             }
@@ -74,6 +96,7 @@ public class benefitsOfDanceFragment extends Fragment {
             showDialog();
         }
     }
+
     @Override
     public void onStart() {
         super.onStart();
@@ -82,14 +105,6 @@ public class benefitsOfDanceFragment extends Fragment {
         }
     }
 
-//    @Override
-//    public void onPause() {
-//        super.onPause();
-//        if (dialogRunnable != null) {
-//            handler.removeCallbacks(dialogRunnable);
-//        }
-//    }
-
     private void dataInitialized() {
         cardItemList = new ArrayList<>();
         cardTitle = new String[]{
@@ -97,15 +112,12 @@ public class benefitsOfDanceFragment extends Fragment {
                 getString(R.string.benefitsOfDance_mental_Emotional),
                 getString(R.string.benefitsOfDance_Social),
                 getString(R.string.benefitsOfDance_Cultural),
-
-
         };
         description = new String[]{
                 getString(R.string.danceAs),
                 getString(R.string.danceAs),
                 getString(R.string.danceAs),
                 getString(R.string.danceAs),
-
         };
         topic = new String[]{
                 getString(R.string.benefitsOfDance_PhysicalTopic),
@@ -115,11 +127,10 @@ public class benefitsOfDanceFragment extends Fragment {
         };
 
         imageResource = new int[]{
-                R.drawable.fill_settings,
-                R.drawable.home,
-                R.drawable.fill_settings,
-                R.drawable.home,
-
+                R.drawable.physical,
+                R.drawable.mental,
+                R.drawable.social,
+                R.drawable.cultural,
         };
 
         for (int i = 0; i < cardTitle.length; i++) {
@@ -166,6 +177,9 @@ public class benefitsOfDanceFragment extends Fragment {
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putBoolean("dialog_shown", true);
                     editor.apply();
+
+                    // Start the quiz activity
+                    startActivity(new Intent(getContext(), benefitOfDanceQuizEz.class));
                 })
                 .setNegativeButton("No", (dialog, which) -> {
                     dialog.dismiss();
@@ -189,10 +203,10 @@ public class benefitsOfDanceFragment extends Fragment {
                     showDialog();
                 }
                 // Schedule the next dialog appearance in 30 seconds
-                handler.postDelayed(this, 5000);
+                handler.postDelayed(this, 30000);
             }
         };
-        handler.postDelayed(dialogRunnable, 5000);
+        handler.postDelayed(dialogRunnable, 30000);
     }
 
     @Override

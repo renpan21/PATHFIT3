@@ -3,12 +3,12 @@ package com.example.pathfit3;
 public class VideoItem {
     private String url;
     private String title;
-    private String description;
 
-    public VideoItem(String url, String title, String description) {
+
+    public VideoItem(String url, String title) {
         this.url = url;
         this.title = title;
-        this.description = description;
+
     }
 
     public String getUrl() {
@@ -19,8 +19,6 @@ public class VideoItem {
         return title;
     }
 
-    public String getDescription() {
-        return description;
-    }
+
 }
 

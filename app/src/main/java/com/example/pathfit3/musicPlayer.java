@@ -11,7 +11,8 @@ public class musicPlayer extends Service implements MediaPlayer.OnErrorListener 
 
     private final IBinder mBinder = new ServiceBinder();
     private MediaPlayer mPlayer;
-    private int length = 0; // To keep track of the current position
+
+    private float currentVolume = 1.0f;
 
     public musicPlayer() { }
 
@@ -23,59 +24,56 @@ public class musicPlayer extends Service implements MediaPlayer.OnErrorListener 
 
     @Override
     public IBinder onBind(Intent intent) {
-        return mBinder; // Binding not needed for this use case
+        return mBinder;
     }
 
     @Override
     public void onCreate() {
         super.onCreate();
-        mPlayer = MediaPlayer.create(this, R.raw.bg_music); // Replace with your actual music file
+        mPlayer = MediaPlayer.create(this, R.raw.bg_music);
         mPlayer.setOnErrorListener(this);
         mPlayer.setLooping(true);
-        mPlayer.setVolume(1.0f, 1.0f);
-        mPlayer.setOnCompletionListener(mp -> mp.seekTo(0)); // Looping behavior
+        mPlayer.setVolume(currentVolume, currentVolume);
+        mPlayer.setOnCompletionListener(mp -> mp.seekTo(0)); // Loop
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         if (mPlayer != null && !mPlayer.isPlaying()) {
-            mPlayer.start(); // Start playing music if it's not already playing
-        }
-        return START_STICKY; // Service will continue until explicitly stopped
-    }
-
-    public void pauseMusic() {
-        if (mPlayer != null && mPlayer.isPlaying()) {
-            mPlayer.pause();
-            length = mPlayer.getCurrentPosition(); // Save the current position
-        }
-    }
-
-    public void resumeMusic() {
-        if (mPlayer != null && !mPlayer.isPlaying()) {
-            mPlayer.seekTo(length); // Resume from the saved position
             mPlayer.start();
         }
+        return START_STICKY;
     }
 
     public void stopMusic() {
         if (mPlayer != null) {
             mPlayer.stop();
-            mPlayer.release(); // Release resources
-            mPlayer = null; // Set to null for garbage collection
+            mPlayer.release();
+            mPlayer = null;
         }
+    }
+
+    public void setVolume(float leftVolume, float rightVolume) {
+        if (mPlayer != null) {
+            currentVolume = leftVolume;
+            mPlayer.setVolume(leftVolume, rightVolume);
+        }
+    }
+
+    public float getVolume() {
+        return currentVolume;
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        stopMusic(); // Stop and release the player when the service is destroyed
+        stopMusic();
     }
 
     @Override
     public boolean onError(MediaPlayer mp, int what, int extra) {
         Toast.makeText(this, "Music player failed", Toast.LENGTH_SHORT).show();
-        stopMusic(); // Handle error and stop the music
-        return true; // Error handled
+        stopMusic(); // Handle error/stop music
+        return true;
     }
 }

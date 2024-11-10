@@ -1,44 +1,57 @@
 package com.example.pathfit3.quizQnA;
 
+import android.content.Context;
+import com.example.pathfit3.R;
+
 public class benefitOfDanceQnA {
-    public static String question[] ={
-            "Improves body coordination and flexibility",
-            "Lower body mass index",
-            "Helps keep the brain sharp",
-            "Increase self esteem ",
-            "Improves body image",
-            "Does Dance enable joint mobility",
-            "Does dance helps improve and maintain bone density",
-            "Does dance encourages interpersonal relationship in group",
-            "Does dance improves balance and body composition",
-            "Does dance lower risks of cardiovascular diseases"
-    };
+    private Context context;
 
-    public static String choices[][] = {
-            {"Physical","Emotional/Mental","Social","Cultural"},
-            {"Physical","Emotional/Mental","Social","Cultural"},
-            {"Physical","Emotional/Mental","Social","Cultural"},
-            {"Physical","Emotional/Mental","Social","Cultural"},
-            {"Physical","Emotional/Mental","Social","Cultural"},
-            {"True","Maybe","False","Social"},
-            {"False","True","Not True","No"},
-            {"True","Not True","False","Maybe"},
-            {"True","Not True","False","Maybe"},
-            {"True","Not True","False","Maybe"}
+    public benefitOfDanceQnA(Context context) {
+        this.context = context;
+    }
 
-    };
+    public String[] getQuestions() {
+        return new String[] {
+                context.getString(R.string.benefitDanceEz_question_1),
+                context.getString(R.string.benefitDanceEz_question_2),
+                context.getString(R.string.benefitDanceEz_question_3),
+                context.getString(R.string.benefitDanceEz_question_4),
+                context.getString(R.string.benefitDanceEz_question_5),
+                context.getString(R.string.benefitDanceEz_question_6),
+                context.getString(R.string.benefitDanceEz_question_7),
+                context.getString(R.string.benefitDanceEz_question_8),
+                context.getString(R.string.benefitDanceEz_question_9),
+                context.getString(R.string.benefitDanceEz_question_10)
+        };
+    }
 
-    public static String correctAnswers[] = {
-            "Physical",
-            "Physical",
-            "Emotional/Mental",
-            "Emotional/Mental",
-            "Emotional/Mental",
-            "True",
-            "True",
-            "True",
-            "True",
-            "True"
+    public String[][] getChoices() {
+        return new String[][] {
+                context.getResources().getStringArray(R.array.benefitDanceEz_choices_1),
+                context.getResources().getStringArray(R.array.benefitDanceEz_choices_2),
+                context.getResources().getStringArray(R.array.benefitDanceEz_choices_3),
+                context.getResources().getStringArray(R.array.benefitDanceEz_choices_4),
+                context.getResources().getStringArray(R.array.benefitDanceEz_choices_5),
+                context.getResources().getStringArray(R.array.benefitDanceEz_choices_6),
+                context.getResources().getStringArray(R.array.benefitDanceEz_choices_7),
+                context.getResources().getStringArray(R.array.benefitDanceEz_choices_8),
+                context.getResources().getStringArray(R.array.benefitDanceEz_choices_9),
+                context.getResources().getStringArray(R.array.benefitDanceEz_choices_10)
+        };
+    }
 
-    };
+    public String[] getCorrectAnswers() {
+        return new String[] {
+                context.getString(R.string.benefitDanceEz_correct_answer_1),
+                context.getString(R.string.benefitDanceEz_correct_answer_2),
+                context.getString(R.string.benefitDanceEz_correct_answer_3),
+                context.getString(R.string.benefitDanceEz_correct_answer_4),
+                context.getString(R.string.benefitDanceEz_correct_answer_5),
+                context.getString(R.string.benefitDanceEz_correct_answer_6),
+                context.getString(R.string.benefitDanceEz_correct_answer_7),
+                context.getString(R.string.benefitDanceEz_correct_answer_8),
+                context.getString(R.string.benefitDanceEz_correct_answer_9),
+                context.getString(R.string.benefitDanceEz_correct_answer_10)
+        };
+    }
 }

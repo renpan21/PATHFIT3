@@ -16,8 +16,8 @@ import androidx.transition.AutoTransition;
 import androidx.transition.TransitionManager;
 
 public class AboutUs extends AppCompatActivity {
-    CardView crdCerezo, crdMercado;
-    LinearLayout infoCerezo, infoSupan, infoMaliwat, infoMercado;
+//    CardView crdCerezo, crdMercado;
+//    LinearLayout infoCerezo, infoSupan, infoMaliwat, infoMercado;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,26 +29,30 @@ public class AboutUs extends AppCompatActivity {
             return insets;
         });
 
-        views();
-        clickListeners();
+//        views();
+//        clickListeners();
+
+
+
+
 
     }
 
-    private void views() {
-        crdCerezo = findViewById(R.id.crdCerezo);
-        crdMercado = findViewById(R.id.crdMercado);
-        infoCerezo = findViewById(R.id.infoCerezo);
-        infoMercado = findViewById(R.id.infoMercado);
-    }
-
-    private void clickListeners() {
-        crdCerezo.setOnClickListener(v -> infoVisibility(infoCerezo));
-        crdMercado.setOnClickListener(v -> infoVisibility(infoMercado));
-    }
-
-    private void infoVisibility(LinearLayout info) {
-        int visibility = (info.getVisibility() == View.GONE) ? View.VISIBLE : View.GONE;
-        TransitionManager.beginDelayedTransition(info, new AutoTransition());
-        info.setVisibility(visibility);
-    }
+//    private void views() {
+//        crdCerezo = findViewById(R.id.crdCerezo);
+//        crdMercado = findViewById(R.id.crdMercado);
+//        infoCerezo = findViewById(R.id.infoCerezo);
+//        infoMercado = findViewById(R.id.infoMercado);
+//    }
+//
+//    private void clickListeners() {
+//        crdCerezo.setOnClickListener(v -> infoVisibility(infoCerezo));
+//        crdMercado.setOnClickListener(v -> infoVisibility(infoMercado));
+//    }
+//
+//    private void infoVisibility(LinearLayout info) {
+//        int visibility = (info.getVisibility() == View.GONE) ? View.VISIBLE : View.GONE;
+//        TransitionManager.beginDelayedTransition(info, new AutoTransition());
+//        info.setVisibility(visibility);
+//    }
 }

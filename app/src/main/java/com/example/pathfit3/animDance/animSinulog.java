@@ -34,10 +34,10 @@ public class animSinulog extends AppCompatActivity {
 
 
         List<VideoItem> videoItems = Arrays.asList(
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.s1, "Sinulog Dance Step1", "Description for Step 1."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.s2, "Sinulog Dance Step2", "Description for Step 2."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.s3, "Sinulog Dance Step3", "Description for Step 3."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.s4, "Sinulog Dance Step4", "Description for Step 4.")
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.s1, "Sinulog Dance Step1"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.s2, "Sinulog Dance Step2"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.s3, "Sinulog Dance Step3"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.s4, "Sinulog Dance Step4")
 
         );
 

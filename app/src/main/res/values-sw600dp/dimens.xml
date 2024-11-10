@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text Sizes -->
+    <dimen name="txtSize">40sp</dimen>
+
+    <!-- Button Size -->
+    <dimen name="btnWidth">100dp</dimen>
+    <dimen name="btnHeight">70dp</dimen>
+
+    <!-- Lottie Animation Size -->
+    <dimen name="lottie_height">500dp</dimen>
+
+
+
+</resources>

@@ -16,7 +16,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.pathfit3.R;
-
 import com.example.pathfit3.quizQnA.benefitOfDanceQnA;
 
 import java.util.ArrayList;
@@ -26,7 +25,7 @@ import java.util.List;
 public class benefitOfDanceQuizEz extends AppCompatActivity implements View.OnClickListener {
     private TextView questionTxt;
     private TextView timerTxt;
-    private TextView totalQuestionsTxt;
+    private TextView totalQuestionTxt;
     private Button ansA, ansB, ansC, ansD;
     private Button submitBtn;
 
@@ -40,6 +39,7 @@ public class benefitOfDanceQuizEz extends AppCompatActivity implements View.OnCl
     private CountDownTimer countDownTimer;
     private final long TIMER_DURATION = 61000;
     private final long TIMER_INTERVAL = 1000;
+    private benefitOfDanceQnA quizData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +49,7 @@ public class benefitOfDanceQuizEz extends AppCompatActivity implements View.OnCl
 
         questionTxt = findViewById(R.id.question);
         timerTxt = findViewById(R.id.timer);
-        totalQuestionsTxt = findViewById(R.id.total_question);
+        totalQuestionTxt = findViewById(R.id.total_question);
         ansA = findViewById(R.id.ans_A);
         ansB = findViewById(R.id.ans_B);
         ansC = findViewById(R.id.ans_C);
@@ -62,7 +62,13 @@ public class benefitOfDanceQuizEz extends AppCompatActivity implements View.OnCl
         ansD.setOnClickListener(this);
         submitBtn.setOnClickListener(this);
 
-        initializeQuestions();
+        // Initialize the quiz data
+        quizData = new benefitOfDanceQnA(this);
+        String[] questionsArray = quizData.getQuestions();
+        String[][] choicesArray = quizData.getChoices();
+        String[] correctAnswersArray = quizData.getCorrectAnswers();
+
+        initializeQuestions(questionsArray, choicesArray, correctAnswersArray);
         Collections.shuffle(questions);
         totalQuestions = questions.size();
 
@@ -74,6 +80,7 @@ public class benefitOfDanceQuizEz extends AppCompatActivity implements View.OnCl
             return insets;
         });
     }
+
     public void onClick(View view) {
         ansA.setBackgroundColor(Color.WHITE);
         ansB.setBackgroundColor(Color.WHITE);
@@ -115,7 +122,7 @@ public class benefitOfDanceQuizEz extends AppCompatActivity implements View.OnCl
     }
 
     void updateQuestionIndex() {
-        totalQuestionsTxt.setText("Question " + (currQuestionIndex + 1) + " of " + totalQuestions);
+        totalQuestionTxt.setText("Question " + (currQuestionIndex + 1) + " of " + totalQuestions);
     }
 
     void finishQuiz() {
@@ -123,18 +130,18 @@ public class benefitOfDanceQuizEz extends AppCompatActivity implements View.OnCl
             countDownTimer.cancel();
         }
 
-        String passStatus = score > totalQuestions * 0.60 ? "Passed" : "Failed";
+        String passStatus = score > totalQuestions * 0.60 ? getString(R.string.dialog_title_passed) : getString(R.string.dialog_title_failed);
 
         new AlertDialog.Builder(this)
                 .setTitle(passStatus)
-                .setMessage("Score is " + score + " out of " + totalQuestions)
-                .setPositiveButton("Start Next Quiz", (dialogInterface, i) -> {
+                .setMessage(getString(R.string.dialog_message, score, totalQuestions))
+                .setPositiveButton(R.string.dialog_positive_button, (dialogInterface, i) -> {
                     Intent intent = new Intent(this, benefitOfDanceHardQuiz.class);
                     startActivity(intent);
                     finish();
                 })
-                .setNeutralButton("Restart Quiz", (dialogInterface, i) -> restartQuiz())
-                .setNegativeButton("Finish Quiz", (dialogInterface, i) -> finish())
+                .setNeutralButton(R.string.dialog_neutral_button, (dialogInterface, i) -> restartQuiz())
+                .setNegativeButton(R.string.dialog_negative_button, (dialogInterface, i) -> finish())
                 .setCancelable(false)
                 .show();
     }
@@ -158,14 +165,14 @@ public class benefitOfDanceQuizEz extends AppCompatActivity implements View.OnCl
         }
     }
 
-    private void initializeQuestions() {
+    private void initializeQuestions(String[] questionsArray, String[][] choicesArray, String[] correctAnswersArray) {
         questions = new ArrayList<>();
 
-        for (int i = 0; i < benefitOfDanceQnA.question.length; i++) {
+        for (int i = 0; i < questionsArray.length; i++) {
             questions.add(new Question(
-                    benefitOfDanceQnA.question[i],
-                    benefitOfDanceQnA.choices[i],
-                    benefitOfDanceQnA.correctAnswers[i]
+                    questionsArray[i],
+                    choicesArray[i],
+                    correctAnswersArray[i]
             ));
         }
     }

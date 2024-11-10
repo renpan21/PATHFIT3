@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PATHFIT3</string>
+    <string name="title_activity_home_module">homeModule</string>
+    <string name="title_home">Bahay</string>
+    <string name="title_lesson">Mga Aralin</string>
+    <string name="title_tutorials">Mga Tutorial</string>
+    <string name="title_settings">Mga Setting</string>
+
+    <!-- Mga Pangalan ng Developer -->
+    <string name="dev_Lorence">Lorence Cerezo</string>
+    <string name="dev_Jerard">Jerard Maliwat</string>
+    <string name="dev_Jericho">Jericho Mercado</string>
+    <string name="dev_Reniel">Reniel John Supan</string>
+
+    <string name="cerezo_gmail">lorence2518cerezo@gmail.com</string>
+    <string name="maliwat_gmail">Jerardmaliwat07@gmail.com</string>
+
+    <string name="danceAs">Sumayaw Bilang:</string>
+
+    <!-- Pamagat ng Aralin 1 -->
+    <string name="lesson1_DancePeriods">Mga Panahon ng Sayaw</string>
+    <string name="lesson1_whatIsDance">Ano ang Sayaw</string>
+    <string name="lesson1_PreHistoric">Pre-Historiko</string>
+    <string name="lesson1_AncientEgypt">Sinaunang Ehipto</string>
+    <string name="lesson1_AncientGreek">Sinaunang Griyego</string>
+    <string name="lesson1_AncientRome">Sinaunang Roma</string>
+    <string name="lesson1_CatolicChurchInEurope">Simbahang Katoliko sa Europa</string>
+    <string name="lesson1_DarknEarlyMiddleAge">Madilim at Maagang Gitnang Panahon</string>
+    <string name="lesson1_EarlyRenaissance">Maagang Renasimiyento</string>
+    <string name="lesson1_EuropeIn15n16Century">Europa sa ika-15 at ika-16 Siglo</string>
+    <string name="lesson1_BenefitOfDance">Benepisyo ng Sayaw</string>
+
+    <string name="lesson2_natureOfDance">Kalikasang ng Sayaw</string>
+
+    <string name="DanceTopic">Ang sayaw ay ang paggalaw ng katawan sa isang ritmo, karaniwan sa musika at sa loob ng isang tiyak na espasyo, para ipahayag ang ideya o damdamin, maglabas ng enerhiya, o simpleng mag-enjoy. Ito ay isang pagpapahayag na sinasamahan ng musika, mula sa mga primitibong tao na nagpapahayag ng emosyon sa mga kaganapan tulad ng kapanganakan, kamatayan, at kasal, hanggang sa mga modernong anyo ng pagtitipon. Isa ito sa mga pinakalumang at pinaka-popular na anyo ng ehersisyo.</string>
+
+    <!-- Prehistoric Topic -->
+    <string name="prehistoric_Topic">Isang pangunahing anyo ng relihiyosong ritwal at panlipunang pagpapahayag sa mga primitibong kultura. Isang paraan ng pagkakaisa ng tribo at para sa panliligaw at pagpaparami. Isang pamamaraan ng pagsamba at komunikasyon, pati na rin ng karanasang nakapagpapagaling.</string>
+
+    <!-- Ancient Egypt -->
+    <string name="ancient_egypt_Topic">Ang sayaw ay naging ganap at ito ay mayamang naitala, makikita sa mga pinta sa pader, mga relief, at sa mga talaan sa hieroglyphs. Ito ay isang medium ng relihiyosong pagpapahayag.</string>
+
+    <!-- Ancient Greek -->
+    <string name="ancient_greek_Topic">Isang anyo ng edukasyong militar at libangan.</string>
+
+    <!-- Ancient Rome -->
+    <string name="ancient_rome_Topic">Sa panahon ng mga Romano, nagbago ang pagpapahalaga sa sining habang ang mga bansa ay yumayaman. Tumigil ang mga Romano sa paglikha at pagganap sa sining.</string>
+
+    <!-- Catholic Church -->
+    <string name="catolic_church_Topic">Inaprubahan ng mga Ama ng Kristiyanismo ang paggamit ng sayaw, sa kondisyon na ito ay banal at malalim. Ang sayaw ay naging bahagi ng mga pagsamba at aktibidad ng simbahan.</string>
+
+    <!-- Dark and Early Middle Ages -->
+    <string name="darkMiddleAges_Topic">Nagsagawa ng sayaw sa mga plaza ng nayon upang salubungin ang mga feudal lord. Ang mga karaniwang tao ay nag-enjoy sa mga sayaw na panlipunan, simula ng Sosyal na Sayawan. Dalawang uri ng sayaw ang isinagawa ng mga magsasaka: Round Dance (mga mananayaw ay magkakapit-bisig at bumubuo ng kadena sa isang bilog) at Couple Dance (mas kakaunti ang nagsasagawa dahil itinuturing na iskandalo).</string>
+
+    <!-- Renaissance -->
+    <string name="renaissance_Topic">Tinanggap sa mga korte habang unti-unting tumataas ang kapitalistang klase na nagbibigay ng mga patron ng kaalaman at sining sa Europa. Ang sayaw at sining ay nagkakaroon ng sigla, ang mga tagapagsaya ay naging mahalagang bahagi ng mga korte sa Italya at Pransya.</string>
+
+    <!-- Europe in 15th and 16th Century -->
+    <string name="europe15th_Topic">Maraming sayaw sa korte ang isinagawa ng mga maharlika, pati na rin ang pag-usbong ng ballet sa Italya at Pransya. Maraming iba pang anyo ng sayaw ang lumitaw at kumalat sa ibat ibang bansa.</string>
+
+    <string name="hello_blank_fragment">Kamusta, blangkong fragment</string>
+
+    <string name="benefitsOfDance_Physical">Pisikal</string>
+    <string name="benefitsOfDance_PhysicalTopic">Nagpapabuti ng cardiovascular endurance, koordinasyon, balanse, kakayahang umikot, at komposisyon ng katawan. Nagbabawas ng panganib ng sakit sa puso at ng index ng mass ng katawan, nagpapabuti ng lipid metabolism, at tumutulong sa paggalaw ng mga kasukasuan. Tumutulong din sa pagpapanatili ng bone density.</string>
+
+    <string name="benefitsOfDance_mental_Emotional">Sikolohikal/Pisikal</string>
+    <string name="benefitsOfDance_mental_EmotionalTopic">Tumutulong upang mapanatiling matalas ang isipan, nagbabawas ng posibilidad ng Dementia at Alzheimers Disease, sintomas ng depresyon, at nagpapataas ng tiwala sa sarili at imahe ng katawan. Tumutulong din sa pagpapalabas ng emosyonal at pisikal na tensyon.</string>
+
+    <string name="benefitsOfDance_Social">Panlipunan</string>
+    <string name="benefitsOfDance_SocialTopic">Nagbibigay ng pakiramdam ng sama-sama sa loob ng grupo, nag-uudyok ng positibong interaksyon at relasyon. Nag-aambag sa self-actualization ng mga indibidwal sa lipunan.</string>
+
+    <string name="benefitsOfDance_Cultural">Kultural</string>
+    <string name="benefitsOfDance_CulturalTopic">Nagtataguyod ng mga kultural na halaga.</string>
+
+    <string name="traditionalDance_FolknEthnic">Mga Tradisyonal na Sayaw (Folk at Etno).</string>
+    <string name="traditionalDance_FolknEthnicTopic">Mga sayaw mula sa mga katutubong komunidad na nagpapakita ng mga kultural na katangian. Pinananatili ang mga kaugalian at tradisyon sa pamamagitan ng mga hakbang sa sayaw at kasuotan.</string>
+
+    <string name="threeTypesofSocialDances">Tatlong Uri ng Sosyal na Sayaw.</string>
+    <string name="threeTypesofSocialDancesTopic">Ritwal na Sayaw, Sayaw ng Buhay na Siklo, at Sayaw ng Hanapbuhay. Ang sayaw ng hanapbuhay ay isang anyo ng sining na nagpapahayag ng masipag na halaga ng mga Pilipino mula sa ibat ibang lugar sa bansa, na nagpapakita ng kanilang lokal na kultura at kabuhayan.</string>
+
+    <string name="traditionalFolkDance">Folk Dance</string>
+    <string name="traditionalFolkDanceTopic">Ayon sa mga heograpikal na lokasyon, ang mga Folk Dances ay maaaring: Pambansa (mga sayaw na may karaniwang pangunahing galaw, na may kaunting pagbabago) at Lokal/Regional (mga sayaw na natatangi sa tiyak na lokalidad).</string>
+
+    <string name="traditionalModernContemporary">Moderno at Kontemporaryong Sayaw</string>
+    <string name="traditionalModernContemporaryTopic">Modernong Sayaw: isang estilo ng pagsasayaw kung saan ang mga mananayaw ay malayang nagpapahayag ng kanilang damdamin sa pamamagitan ng galaw. Kontemporaryong Sayaw: pinagsasama ang matibay na galaw ng binti at balanse ng ballet at galaw ng katawan ng modernong sayaw.</string>
+
+    <string name="cheerDance">CheerDance</string>
+    <string name="cheerDanceTopic">Isang kumbinasyon ng pagsigaw at pagsasayaw, kasama ang kinakailangang sigaw at mga acrobatic na galaw tulad ng cartwheels at hand springs.</string>
+
+    <string name="streetDance">StreetDance</string>
+    <string name="streetDanceTopic">HipHop: isang istilo ng sayaw na isinagawa sa musika ng hip-hop, karaniwang sinasayaw sa kalye, kasama ang ibat ibang istilo tulad ng breakdancing, locking, at popping.</string>
+
+    <string name="balletDance">Ballet</string>
+    <string name="balletDanceTopic">Mula sa Italyanong "BALLARE" na nangangahulugang SUMAYAW, at "BALLO" na tumutukoy sa MGA SAYAW NA ISINASAGAWA SA MGA BALLROOM. Isang artistikong sayaw na sinasamahan ng musika.</string>
+
+    <string name="ballroomDance">Ballroom</string>
+    <string name="ballroomDanceTopic">Isang hanay ng mga sayaw na may kasosyo, na tinatangkilik sa parehong panlipunan at mapagkumpitensyang paraan. Malawak na tinatangkilik sa entablado, pelikula, at telebisyon.</string>
+
+    <string name="festivalDance">Festival Dance</string>
+    <string name="festivalDanceTopic">Mga kultural na sayaw na isinasagawa sa mga malalakas na tunog ng percussion instruments ng komunidad, karaniwang isinasagawa bilang paggalang sa isang patron saint o bilang pasasalamat para sa masaganang ani. Maaaring relihiyoso o sekular ang mga Festival Dances.</string>
+</resources>

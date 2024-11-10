@@ -42,6 +42,7 @@
         android:id="@+id/total_question"
         android:text="Total Questions "
         android:fontFamily="@font/arvo"
+        style="@style/textColorCloud"
         android:layout_centerHorizontal="true"
         android:textSize="20dp"
         android:layout_below="@+id/toolbar"/>
@@ -50,6 +51,7 @@
         android:layout_below="@+id/total_question"
         android:id="@+id/timer"
         android:fontFamily="@font/arvo"
+        style="@style/textColorCloud"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
@@ -120,7 +122,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/submit_btn"
+        android:backgroundTint="@color/lavender"
         android:text="Submit"
+        android:textColor="@color/black"
         android:layout_below="@id/choices_layout"
         android:layout_marginTop="40dp"/>
 

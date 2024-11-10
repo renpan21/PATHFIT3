@@ -1,13 +1,18 @@
 package com.example.pathfit3.fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -17,6 +22,9 @@ import android.view.ViewGroup;
 import com.example.pathfit3.R;
 import com.example.pathfit3.lessonsCardItem;
 import com.example.pathfit3.lessonsViewAdapter;
+import com.example.pathfit3.quiz.benefitOfDanceQuizEz;
+import com.example.pathfit3.quiz.natureOfDanceQuizEz;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
@@ -34,13 +42,31 @@ public class natureOfdiffDancesFragment extends Fragment {
     boolean isDialogShown = false;
     boolean isDialogScheduled = false;
 
-
+    BottomNavigationView bottomNav;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_dance_period_view, container, false);
+        View view =  inflater.inflate(R.layout.fragment_dance_period_view, container, false);
+
+
+        bottomNav = requireActivity().findViewById(R.id.nav_view);
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.frame_layout, new lessonsFragment());
+                fragmentTransaction.commit();
+
+                if (bottomNav != null) {
+                    bottomNav.setSelectedItemId(R.id.navigation_lesson);
+                }
+            }
+        });
+
+        return view;
     }
 
     @Override
@@ -134,15 +160,15 @@ public class natureOfdiffDancesFragment extends Fragment {
         };
 
         imageResource = new int[]{
-                R.drawable.fill_settings,
-                R.drawable.fill_settings,
-                R.drawable.fill_settings,
-                R.drawable.fill_settings,
-                R.drawable.fill_settings,
-                R.drawable.fill_settings,
-                R.drawable.fill_settings,
-                R.drawable.fill_settings,
-                R.drawable.fill_settings,
+                R.drawable.cultural,
+                R.drawable.social_dance,
+                R.drawable.folk,
+                R.drawable.contemporary,
+                R.drawable.cheer_dance,
+                R.drawable.hiphop,
+                R.drawable.ballet,
+                R.drawable.ballroom,
+                R.drawable.festival_dance,
 
         };
 
@@ -190,6 +216,7 @@ public class natureOfdiffDancesFragment extends Fragment {
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putBoolean("dialog_shown", true);
                     editor.apply();
+                    startActivity(new Intent(getContext(), natureOfDanceQuizEz.class));
                 })
                 .setNegativeButton("No", (dialog, which) -> {
                     dialog.dismiss();

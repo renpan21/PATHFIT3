@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PATHFIT3</string>
+    <string name="title_activity_home_module">homeModule</string>
+    <string name="title_home">Bahay</string>
+    <string name="title_lesson">Aralin</string>
+    <string name="title_tutorials">Tutoryal</string>
+    <string name="title_settings">Setting</string>
+    <string name="title_about">Tungkol Samin</string>
+    <string name="startUp">Kamusta!</string>
+    <string name="startUp1">Handa Kana Bang Sumayaw?</string>
+
+    <string name="fragment_intro">Tuturuan kang sumayaw</string>
+    <!-- Mga Pangalan ng Developer -->
+    <string name="dev_Lorence">Lorence Cerezo</string>
+    <string name="dev_Jerard">Jerard Maliwat</string>
+    <string name="dev_Jericho">Jericho Mercado</string>
+    <string name="dev_Reniel">Reniel John Supan</string>
+
+    <string name="cerezo_gmail">lorence2518cerezo@gmail.com</string>
+    <string name="maliwat_gmail">Jerardmaliwat07@gmail.com</string>
+
+
+    <string name="welcome_message">Maligayang pagdating sa PATHFIT3!</string>
+    <string name="mission_statement">Sa PATHFIT3, naniniwala kami na ang sayaw ay hindi lamang isang serye ng mga galaw; ito ay isang dinamikong anyo ng pagpapahayag na nagpapayaman sa buhay. Ang aming layunin ay gawing accessible ang edukasyon sa sayaw para sa lahat, anuman ang karanasan. Sa pamamagitan ng aming makabagong Android app, nakatuon kami sa pagtulong sa iyo na tuklasin at master ang sining ng sayaw.</string>
+    <string name="audience_statement">Kung ikaw ay isang Estudyante o isang Guro sa PE na naghahanap upang mapabuti ang iyong mga kakayahan sa pag-aaral at sayaw, ang PATHFIT3 ay dinisenyo upang suportahan ka sa bawat yugto ng iyong paglalakbay sa sayaw. Ang aming app ay may mga tampok na:\n</string>
+    <string name="dance_curriculum">• Komprehensibong Kurikulum sa Sayaw: \nAng aming maingat na piniling kurikulum ay sumasaklaw sa ibat ibang estilo ng sayaw, mula sa ballet at hip-hop hanggang sa contemporary at cheer dance. Ang bawat seksyon ay naglalaman ng detalyadong mga aralin na naghahati-hati sa mga teknika at galaw, na nagpapahintulot sa iyo na matutunan ng paunti-unti.\n</string>
+    <string name="structured_learning">• Naka-istrukturang Mga Landas sa Pagkatuto: \nNag-aalok kami ng mga naka-tailor na landas sa pagkatuto na gumagabay sa iyo sa bawat estilo ng sayaw, tinitiyak na bumuo ka ng isang solidong pundasyon bago lumipat sa mas advanced na mga teknika. Ang nakastrukturang diskarte na ito ay tumutulong sa iyo na bumuo ng tiwala at kasanayan sa paglipas ng panahon.\n</string>
+    <string name="interactive_tutorials">• Interactive na Mga Tutorial: \nMakilahok sa aming step-by-step na mga video tutorial na nagbibigay ng malinaw na mga demonstrasyon at kapaki-pakinabang na mga tip para sa pag-master ng bawat galaw ng sayaw. Magagawa mong magpraktis sa iyong sariling bilis, na may kakayahang balikan ang mga aralin kung kinakailangan.\n</string>
+    <string name="passion_statement">Sa PATHFIT3, kami ay masigasig sa pagpapalaganap ng pagmamahal sa sayaw habang pinapalakas ang kalusugan at kapakanan. Inaanyayahan ka naming i-download ang PATHFIT3 app ngayon at simulan ang isang nakabubuong paglalakbay ng edukasyon sa sayaw ng Pathfit 3!</string>
+
+
+
+    <string name="danceAs">Sayaw Bilang:</string>
+
+    <string name="dialog_title_passed">Pumasa</string>
+    <string name="dialog_title_failed">Hindi Pumasa</string>
+    <string name="dialog_message">Ang marka ay %1$d mula sa %2$d</string>
+    <string name="dialog_positive_button">Simulan ang Susunod na Pagsusulit</string>
+    <string name="dialog_neutral_button">Ulitin ang Pagsusulit</string>
+    <string name="dialog_negative_button">Tapusin ang Pagsusulit</string>
+
+    <string name="question_1_benefitDanceHard">Pinabubuti ang koordinasyon ng katawan at kakayahang umunat</string>
+    <string name="question_2_benefitDanceHard">Pinabababa ang body mass index</string>
+    <string name="question_3_benefitDanceHard">Tumutulong upang mapanatiling matalas ang isip</string>
+    <string name="question_4_benefitDanceHard">Nagpapataas ng tiwala sa sarili</string>
+    <string name="question_5_benefitDanceHard">Pinabubuti ang imahe ng katawan</string>
+    <string name="question_6_benefitDanceHard">Nagbibigay ng pakiramdam ng pagkakaisa sa loob ng grupo</string>
+    <string name="question_7_benefitDanceHard">Nagpo-promote ng mga kultural na halaga</string>
+    <string name="question_8_benefitDanceHard">Nakatutulong sa sariling pag-unlad sa lipunan</string>
+    <string name="question_9_benefitDanceHard">Nababawasan ang mga sintomas ng depresyon</string>
+    <string name="question_10_benefitDanceHard">Pinabubuti ang lipid metabolism</string>
+    <string name="question_11_benefitDanceHard">Tumutulong sa pagpapalabas ng emosyonal at pisikal na tensyon</string>
+    <string name="question_12_benefitDanceHard">Pinabababa ang resting heart rate</string>
+    <string name="question_13_benefitDanceHard">Nabawasan ang insidente ng Dementia at Alzheimer’s Disease</string>
+    <string name="question_14_benefitDanceHard">Nagpapalakas ng cardiovascular endurance</string>
+    <string name="question_15_benefitDanceHard">Pinabababa ang panganib ng mga sakit sa cardiovascular</string>
+    <string name="question_16_benefitDanceHard">Nag-uudyok ng positibong pakikipag-ugnayan sa lipunan</string>
+    <string name="question_17_benefitDanceHard">Nagpapagana ng paggalaw ng kasu-kasuan</string>
+    <string name="question_18_benefitDanceHard">Tumutulong sa pagpapabuti at pagpapanatili ng densidad ng buto</string>
+    <string name="question_19_benefitDanceHard">Nag-uudyok ng interpersonal na relasyon sa grupo</string>
+    <string name="question_20_benefitDanceHard">Pinabubuti ang balanse at komposisyon ng katawan</string>
+
+    <string-array name="choices_1_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_2_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_3_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_4_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_5_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_6_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_7_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_8_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_9_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_10_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_11_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_12_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_13_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_14_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_15_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_16_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_17_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_18_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_19_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="choices_20_benefitDanceHard">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+
+    <string name="correct_answer_1_benefitDanceHard">Pisikal</string>
+    <string name="correct_answer_2_benefitDanceHard">Pisikal</string>
+    <string name="correct_answer_3_benefitDanceHard">Emosyonal/Sikolohikal</string>
+    <string name="correct_answer_4_benefitDanceHard">Emosyonal/Sikolohikal</string>
+    <string name="correct_answer_5_benefitDanceHard">Emosyonal/Sikolohikal</string>
+    <string name="correct_answer_6_benefitDanceHard">Sosyal</string>
+    <string name="correct_answer_7_benefitDanceHard">Kultural</string>
+    <string name="correct_answer_8_benefitDanceHard">Sosyal</string>
+    <string name="correct_answer_9_benefitDanceHard">Emosyonal/Sikolohikal</string>
+    <string name="correct_answer_10_benefitDanceHard">Pisikal</string>
+    <string name="correct_answer_11_benefitDanceHard">Emosyonal/Sikolohikal</string>
+    <string name="correct_answer_12_benefitDanceHard">Pisikal</string>
+    <string name="correct_answer_13_benefitDanceHard">Emosyonal/Sikolohikal</string>
+    <string name="correct_answer_14_benefitDanceHard">Pisikal</string>
+    <string name="correct_answer_15_benefitDanceHard">Pisikal</string>
+    <string name="correct_answer_16_benefitDanceHard">Sosyal</string>
+    <string name="correct_answer_17_benefitDanceHard">Pisikal</string>
+    <string name="correct_answer_18_benefitDanceHard">Pisikal</string>
+    <string name="correct_answer_19_benefitDanceHard">Sosyal</string>
+    <string name="correct_answer_20_benefitDanceHard">Kultural</string>
+
+
+
+    <string name="benefitDanceEz_question_1">Pinabubuti ang koordinasyon ng katawan at kakayahang umunat</string>
+    <string name="benefitDanceEz_question_2">Pinabababa ang body mass index</string>
+    <string name="benefitDanceEz_question_3">Tumutulong upang mapanatiling matalas ang isip</string>
+    <string name="benefitDanceEz_question_4">Nagpapataas ng tiwala sa sarili</string>
+    <string name="benefitDanceEz_question_5">Pinabubuti ang imahe ng katawan</string>
+    <string name="benefitDanceEz_question_6">Nakakatulong ba ang sayaw sa paggalaw ng mga kasu-kasuan?</string>
+    <string name="benefitDanceEz_question_7">Nakakatulong ba ang sayaw sa pagpapabuti at pagpapanatili ng densidad ng buto?</string>
+    <string name="benefitDanceEz_question_8">Nag-uudyok ba ang sayaw ng interpersonal na relasyon sa grupo?</string>
+    <string name="benefitDanceEz_question_9">Pinabubuti ba ng sayaw ang balanse at komposisyon ng katawan?</string>
+    <string name="benefitDanceEz_question_10">Pinabababa ba ng sayaw ang panganib ng mga sakit sa cardiovascular?</string>
+
+    <!-- Correct Answers -->
+    <string name="benefitDanceEz_correct_answer_1">Pisikal</string>
+    <string name="benefitDanceEz_correct_answer_2">Pisikal</string>
+    <string name="benefitDanceEz_correct_answer_3">Emosyonal/Sikolohikal</string>
+    <string name="benefitDanceEz_correct_answer_4">Emosyonal/Sikolohikal</string>
+    <string name="benefitDanceEz_correct_answer_5">Emosyonal/Sikolohikal</string>
+    <string name="benefitDanceEz_correct_answer_6">Tama</string>
+    <string name="benefitDanceEz_correct_answer_7">Tama</string>
+    <string name="benefitDanceEz_correct_answer_8">Tama</string>
+    <string name="benefitDanceEz_correct_answer_9">Tama</string>
+    <string name="benefitDanceEz_correct_answer_10">Tama</string>
+
+    <!-- Choices Arrays -->
+    <string-array name="benefitDanceEz_choices_1">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_2">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_3">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_4">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_5">
+        <item>Pisikal</item>
+        <item>Emosyonal/Sikolohikal</item>
+        <item>Sosyal</item>
+        <item>Kultural</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_6">
+        <item>Tama</item>
+        <item>Marahil</item>
+        <item>Mali</item>
+        <item>Sosyal</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_7">
+        <item>Mali</item>
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Hindi</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_8">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_9">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_10">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+
+
+
+    <!-- Questions -->
+    <string name="dancePeriodHard_question_1">Sa panahon ng Pre-Historiko, ang sayaw ay naipakita sa mga pader na pintura, relief, at sa mga literari na tala sa hieroglyphs?</string>
+    <string name="dancePeriodHard_question_2">Sa aling panahon ng sayaw, ginamit ang sayaw bilang isang daluyan ng relihiyosong pagpapahayag?</string>
+    <string name="dancePeriodHard_question_3">Sa panahon ng Sinaunang Roma, ang sayaw ay itinuturing na isang anyo ng libangan at pagpapakita?</string>
+    <string name="dancePeriodHard_question_4">Ang mga sayaw ay naging bahagi ng pagsamba at mga serbisyo ng simbahan sa panahon ng Sinaunang Ehipto?</string>
+    <string name="dancePeriodHard_question_5">Sa aling panahon ng sayaw, inaprubahan ng mga Ama ng Kristiyanismo ang paggamit ng sayaw, bastat ang anyo at layunin nito ay sagrado at malalim?</string>
+    <string name="dancePeriodHard_question_6">Ang simula ng Social Dancing ay naganap sa aling panahon ng sayaw?</string>
+    <string name="dancePeriodHard_question_7">Sa panahon ng Renaissance, ang sayaw ay ganap na tinanggap sa mga korte sa Europa?</string>
+    <string name="dancePeriodHard_question_8">Sa Couple dance, ang mga mananayaw ay naghawak ng kamay, bumubuo ng mahabang kadena at gumagalaw sa isang bukas na saradong bilog?</string>
+    <string name="dancePeriodHard_question_9">Ang round dance ay hindi kasing tanyag ng Couple dance dahil ito ay itinuturing na iskandaloso nang unang makita?</string>
+    <string name="dancePeriodHard_question_10">Sa panahon ng Sinaunang Gresya, ang sayaw ay naging tulong sa edukasyong militar?</string>
+    <string name="dancePeriodHard_question_11">Sa aling panahon ng sayaw, ang mga tao ay nagsagawa ng sayaw sa mga plasa ng nayon upang salubungin ang mga panginoong feudal sa mga kastilyo?</string>
+    <string name="dancePeriodHard_question_12">Maraming sayaw sa korte ang isinagawa ng mga maharlika kasabay ng pag-angat ng sining ng ballet sa Italya at Pransya?</string>
+    <string name="dancePeriodHard_question_13">Sa aling panahon ng sayaw, ang mga karaniwang tao ay nagpasaya sa kanilang sarili sa pamamagitan ng pagsasayaw na sosyal sa katangian?</string>
+    <string name="dancePeriodHard_question_14">Nakatanggap ba ang sayaw at sining sa pangkalahatan ng impitus?</string>
+    <string name="dancePeriodHard_question_15">Mayroong limang (5) hakbang ng sayaw ng mga magsasaka?</string>
+    <string name="dancePeriodHard_question_16">Ang pagsasayaw ay isa sa mga pinakamatanda at pinakasikat na anyo ng ehersisyo?</string>
+    <string name="dancePeriodHard_question_17">Ang sayaw ay umunlad sa mga modernong anyo ng sosyal na pagsasayaw?</string>
+    <string name="dancePeriodHard_question_18">Mayroong tatlong (3) uri ng sayaw na isinasagawa ng mga magsasaka?</string>
+    <string name="dancePeriodHard_question_19">Sa panahon ng Sinaunang Ehipto, ang sayaw ay isang pangunahing anyo ng relihiyoso, ritwal, at sosyal na pagpapahayag sa mga primitivong kultura?</string>
+    <string name="dancePeriodHard_question_20">Sa panahon ng Sinaunang Roma, tumigil ang mga tao sa pagpapahalaga sa mga katangian sa sining habang ang bansa ay yumayaman at nagiging makapangyarihan?</string>
+
+    <!-- Choices Arrays -->
+    <string-array name="dancePeriodHard_choices_1">
+        <item>Tama</item>
+        <item>Mali</item>
+        <item>Sinaunang Gresya</item>
+        <item>Sinaunang Roma</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_2">
+        <item>Sinaunang Ehipto</item>
+        <item>Pre-Historiko</item>
+        <item>Sinaunang Gresya</item>
+        <item>Simbahang Katoliko sa Europa</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_3">
+        <item>Tama</item>
+        <item>Mali</item>
+        <item>Sinaunang Gresya</item>
+        <item>Sinaunang Roma</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_4">
+        <item>Tama</item>
+        <item>Mali</item>
+        <item>Sinaunang Gresya</item>
+        <item>Sinaunang Roma</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_5">
+        <item>Simbahang Katoliko sa Europa</item>
+        <item>Pre-Historiko</item>
+        <item>Sinaunang Gresya</item>
+        <item>Madilim at Maagang Gitnang Panahon</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_6">
+        <item>Sinaunang Roma</item>
+        <item>Panahon ng Renaissance</item>
+        <item>Madilim at Maagang Gitnang Panahon</item>
+        <item>Europa sa ika-15 at ika-16 na siglo</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_7">
+        <item>Tama</item>
+        <item>Mali</item>
+        <item>Sinaunang Gresya</item>
+        <item>Sinaunang Roma</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_8">
+        <item>Tama</item>
+        <item>Mali</item>
+        <item>Sinaunang Gresya</item>
+        <item>Sinaunang Roma</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_9">
+        <item>Tama</item>
+        <item>Mali</item>
+        <item>Sinaunang Gresya</item>
+        <item>Sinaunang Roma</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_10">
+        <item>Tama</item>
+        <item>Mali</item>
+        <item>Sinaunang Gresya</item>
+        <item>Sinaunang Roma</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_11">
+        <item>Madilim at Maagang Gitnang Panahon</item>
+        <item>Simbahang Katoliko sa Europa</item>
+        <item>Panahon ng Renaissance</item>
+        <item>Europa sa ika-15 at ika-16 na siglo</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_12">
+        <item>Tama</item>
+        <item>Mali</item>
+        <item>Sinaunang Gresya</item>
+        <item>Sinaunang Roma</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_13">
+        <item>Panahon ng Renaissance</item>
+        <item>Simbahang Katoliko sa Europa</item>
+        <item>Madilim at Maagang Gitnang Panahon</item>
+        <item>Sinaunang Roma</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_14">
+        <item>Tama</item>
+        <item>Mali</item>
+        <item>Sinaunang Gresya</item>
+        <item>Sinaunang Roma</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_15">
+        <item>Tama</item>
+        <item>Mali</item>
+        <item>Sinaunang Gresya</item>
+        <item>Sinaunang Roma</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_16">
+        <item>Tama</item>
+        <item>Mali</item>
+        <item>Sinaunang Gresya</item>
+        <item>Sinaunang Roma</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_17">
+        <item>Tama</item>
+        <item>Mali</item>
+        <item>Sinaunang Gresya</item>
+        <item>Sinaunang Roma</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_18">
+        <item>Tama</item>
+        <item>Mali</item>
+        <item>Sinaunang Gresya</item>
+        <item>Sinaunang Roma</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_19">
+        <item>Tama</item>
+        <item>Mali</item>
+        <item>Sinaunang Gresya</item>
+        <item>Sinaunang Roma</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_20">
+        <item>Tama</item>
+        <item>Mali</item>
+        <item>Sinaunang Gresya</item>
+        <item>Sinaunang Roma</item>
+    </string-array>
+
+    <!-- Correct Answers -->
+    <string name="dancePeriodHard_correct_answer_1">Mali</string>
+    <string name="dancePeriodHard_correct_answer_2">Sinaunang Ehipto</string>
+    <string name="dancePeriodHard_correct_answer_3">Mali</string>
+    <string name="dancePeriodHard_correct_answer_4">Mali</string>
+    <string name="dancePeriodHard_correct_answer_5">Simbahang Katoliko sa Europa</string>
+    <string name="dancePeriodHard_correct_answer_6">Madilim at Maagang Gitnang Panahon</string>
+    <string name="dancePeriodHard_correct_answer_7">Tama</string>
+    <string name="dancePeriodHard_correct_answer_8">Mali</string>
+    <string name="dancePeriodHard_correct_answer_9">Mali</string>
+    <string name="dancePeriodHard_correct_answer_10">Tama</string>
+    <string name="dancePeriodHard_correct_answer_11">Madilim at Maagang Gitnang Panahon</string>
+    <string name="dancePeriodHard_correct_answer_12">Tama</string>
+    <string name="dancePeriodHard_correct_answer_13">Madilim at Maagang Gitnang Panahon</string>
+    <string name="dancePeriodHard_correct_answer_14">Tama</string>
+    <string name="dancePeriodHard_correct_answer_15">Mali</string>
+    <string name="dancePeriodHard_correct_answer_16">Tama</string>
+    <string name="dancePeriodHard_correct_answer_17">Tama</string>
+    <string name="dancePeriodHard_correct_answer_18">Mali</string>
+    <string name="dancePeriodHard_correct_answer_19">Mali</string>
+    <string name="dancePeriodHard_correct_answer_20">Tama</string>
+
+
+
+
+    <!-- Quiz Questions -->
+    <string name="dancePeriodsEZ_question_1">Ang sayaw sa panahong ito ay isang pangunahing anyo ng relihiyoso, ritwal, at panlipunang ekspresyon sa mga primitibong kultura?</string>
+    <string name="dancePeriodsEZ_question_2">Ang sayaw sa panahong ito ay nasasalamin sa mga mural, relief, at sa mga talaan ng panitikan sa mga hieroglyphs?</string>
+    <string name="dancePeriodsEZ_question_3">Ang sayaw sa panahong ito ay isang anyo ng aliw at pagtatanghal?</string>
+    <string name="dancePeriodsEZ_question_4">Ang sayaw sa panahong ito ay naging bahagi ng pagsamba at mga serbisyo ng simbahan?</string>
+    <string name="dancePeriodsEZ_question_5">Sa panahong ito, huminto ang mga tao sa pagpapahalaga sa mga katangiang tulad ng sining habang yumayaman at lumalakas ang bansa?</string>
+    <string name="dancePeriodsEZ_question_6">Sa panahong ito, ang mga tao ay nagtatanghal ng sayaw sa mga plaza ng nayon upang salubungin ang mga panginoong feudal sa mga kastilyo?</string>
+    <string name="dancePeriodsEZ_question_7">Sa panahong ito, ang karaniwang tao ay nag-aliw sa kanilang sarili sa pamamagitan ng pagsasayaw na may panlipunang katangian?</string>
+    <string name="dancePeriodsEZ_question_8">Sa panahong ito, ang sayaw ay ganap na tinanggap sa mga korte habang unti-unting tumaas ang uring kapitalista na nagbigay ng mga patron ng kaalaman at sining sa Europa.</string>
+    <string name="dancePeriodsEZ_question_9">Sa panahong ito, higit pang mga sayaw sa korte ang isinagawa ng mga aristokrata pati na rin ang pag-usbong ng sining ng ballet sa Italya at Pransya?</string>
+    <string name="dancePeriodsEZ_question_10">Sa panahong ito, patuloy na umusbong at kumalat ang ibat ibang anyo ng sayaw sa maraming bansa?</string>
+
+    <!-- Choices -->
+    <string-array name="dancePeriodsEZ_choices_1">
+        <item>Panahon ng Prehistoriko</item>
+        <item>Panahon ng Sinaunang Ehipto</item>
+        <item>Panahon ng Sinaunang Gresya</item>
+        <item>Panahon ng Sinaunang Roma</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_2">
+        <item>Panahon ng Prehistoriko</item>
+        <item>Panahon ng Sinaunang Ehipto</item>
+        <item>Panahon ng Sinaunang Roma</item>
+        <item>Panahon ng Katolikong Simbahan sa Europa</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_3">
+        <item>Panahon ng Prehistoriko</item>
+        <item>Panahon ng Sinaunang Ehipto</item>
+        <item>Panahon ng Sinaunang Roma</item>
+        <item>Panahon ng Katolikong Simbahan sa Europa</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_4">
+        <item>Panahon ng Prehistoriko</item>
+        <item>Panahon ng Sinaunang Ehipto</item>
+        <item>Panahon ng Sinaunang Roma</item>
+        <item>Panahon ng Katolikong Simbahan sa Europa</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_5">
+        <item>Panahon ng Sinaunang Ehipto</item>
+        <item>Panahon ng Sinaunang Gresya</item>
+        <item>Panahon ng Prehistoriko</item>
+        <item>Panahon ng Sinaunang Roma</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_6">
+        <item>Panahon ng Sinaunang Roma</item>
+        <item>Panahon ng Katolikong Simbahan sa Europa</item>
+        <item>Madilim at Maagang Gitnang Panahon</item>
+        <item>Panahon ng Prehistoriko</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_7">
+        <item>Panahon ng Sinaunang Roma</item>
+        <item>Panahon ng Katolikong Simbahan sa Europa</item>
+        <item>Panahon ng Prehistoriko</item>
+        <item>Madilim at Maagang Gitnang Panahon</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_8">
+        <item>Panahon ng Renasimiyento</item>
+        <item>Panahon ng Katolikong Simbahan sa Europa</item>
+        <item>Panahon ng Sinaunang Ehipto</item>
+        <item>Madilim at Maagang Gitnang Panahon</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_9">
+        <item>Panahon ng Renasimiyento</item>
+        <item>Panahon ng Katolikong Simbahan sa Europa</item>
+        <item>Europa noong ika-15 at ika-16 na Siglo</item>
+        <item>Madilim at Maagang Gitnang Panahon</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_10">
+        <item>Europa noong ika-15 at ika-16 na Siglo</item>
+        <item>Madilim at Maagang Gitnang Panahon</item>
+        <item>Panahon ng Katolikong Simbahan sa Europa</item>
+        <item>Panahon ng Renasimiyento</item>
+    </string-array>
+
+    <string name="dancePeriodsEZ_correct_answer_1">Panahong Pre-Historiko</string>
+    <string name="dancePeriodsEZ_correct_answer_2">Panahong Sinaunang Ehipto</string>
+    <string name="dancePeriodsEZ_correct_answer_3">Panahong Sinaunang Gresya</string>
+    <string name="dancePeriodsEZ_correct_answer_4">Panahong Katoliko sa Europa</string>
+    <string name="dancePeriodsEZ_correct_answer_5">Panahong Sinaunang Roma</string>
+    <string name="dancePeriodsEZ_correct_answer_6">Madilim at Maagang Gitnang Panahon</string>
+    <string name="dancePeriodsEZ_correct_answer_7">Madilim at Maagang Gitnang Panahon</string>
+    <string name="dancePeriodsEZ_correct_answer_8">Panahon ng Renaissance</string>
+    <string name="dancePeriodsEZ_correct_answer_9">Europa sa ika-15 at ika-16 na Siglo</string>
+    <string name="dancePeriodsEZ_correct_answer_10">Europa sa ika-15 at ika-16 na Siglo</string>
+
+
+
+
+
+
+
+    <string name="natureOfDance_question_1">Ito ay mga sayaw ng mga katutubong komunidad na nagpapakita ng mga katangiang kultural ng mga tao sa tiyak na panahon at lugar?</string>
+    <string name="natureOfDance_question_2">Ang sayaw na ito ay isang kombinasyon ng pagsigaw at pagsayaw?</string>
+    <string name="natureOfDance_question_3">Ang sayaw na ito ay maaaring maging relihiyoso o sekular sa kalikasan?</string>
+    <string name="natureOfDance_question_4">Ang sayaw na ito ay kinuha mula sa salitang Italyano na Ballare, na nangangahulugang sumayaw, at Ballo, na tumutukoy sa mga sayaw na isinasagawa sa ballroom?</string>
+    <string name="natureOfDance_question_5">Ito ay isang istilo ng sayaw na isinagawa sa hip-hop na musika at karaniwang sinasayaw sa kalye?</string>
+    <string name="natureOfDance_question_6">Kasama sa sayaw na ito ang malawak na hanay ng mga istilo, pangunahin ang breaking, locking, at popping?</string>
+    <string name="natureOfDance_question_7">Ito ay isang istilo ng pagsasayaw kung saan ang mga mananayaw ay malayang makakapagpahayag ng kanilang mga damdamin sa pamamagitan ng mga galaw?</string>
+    <string name="natureOfDance_question_8">Ito ay isang set ng mga partner na sayaw na tinatangkilik kapwa sa sosyal at kompetitibong paraan sa buong mundo?</string>
+    <string name="natureOfDance_question_9">Ang sayaw na ito ay naglalaman ng matibay na legwork at balanse ng ballet at trunk movements ng modernong sayaw?</string>
+    <string name="natureOfDance_question_10">Ang sayaw na ito ay karaniwang isinasagawa bilang paggalang sa isang patron saint o bilang pasasalamat para sa masaganang ani?</string>
+
+    <string-array name="natureOfDance_choices_1">
+        <item>Tradisyunal na Sayaw</item>
+        <item>Modernong Sayaw</item>
+        <item>Kontemporaryong Sayaw</item>
+        <item>Pagsasayaw ng Cheer</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_2">
+        <item>Sayaw ng Piyesta</item>
+        <item>Sayaw sa Ballroom</item>
+        <item>Pagsasayaw ng Cheer</item>
+        <item>Sayaw sa Kalye</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_3">
+        <item>Hip-Hop na Sayaw</item>
+        <item>Sayaw ng Bayan</item>
+        <item>Modernong Sayaw</item>
+        <item>Sayaw ng Piyesta</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_4">
+        <item>Tradisyunal na Sayaw</item>
+        <item>Sayaw sa Kalye</item>
+        <item>Pagsasayaw ng Cheer</item>
+        <item>Sayaw ng Ballet</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_5">
+        <item>Sayaw ng Bayan</item>
+        <item>Kontemporaryong Sayaw</item>
+        <item>Sayaw sa Kalye</item>
+        <item>Sayaw sa Ballroom</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_6">
+        <item>Hip-Hop na Sayaw</item>
+        <item>Tradisyunal na Sayaw</item>
+        <item>Sayaw ng Bayan</item>
+        <item>Kontemporaryong Sayaw</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_7">
+        <item>Pagsasayaw ng Cheer</item>
+        <item>Modernong Sayaw</item>
+        <item>Kontemporaryong Sayaw</item>
+        <item>Tradisyunal na Sayaw</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_8">
+        <item>Sayaw sa Ballroom</item>
+        <item>Sayaw ng Ballet</item>
+        <item>Sayaw ng Piyesta</item>
+        <item>Sayaw ng Bayan</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_9">
+        <item>Sayaw ng Bayan</item>
+        <item>Tradisyunal na Sayaw</item>
+        <item>Modernong Sayaw</item>
+        <item>Kontemporaryong Sayaw</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_10">
+        <item>Sayaw ng Piyesta</item>
+        <item>Sayaw ng Bayan</item>
+        <item>Sayaw sa Kalye</item>
+        <item>Sayaw sa Ballroom</item>
+    </string-array>
+
+    <string name="natureOfDance_correct_answer_1">Tradisyunal na Sayaw</string>
+    <string name="natureOfDance_correct_answer_2">Pagsasayaw ng Cheer</string>
+    <string name="natureOfDance_correct_answer_3">Sayaw ng Piyesta</string>
+    <string name="natureOfDance_correct_answer_4">Sayaw ng Ballet</string>
+    <string name="natureOfDance_correct_answer_5">Sayaw sa Kalye</string>
+    <string name="natureOfDance_correct_answer_6">Hip-Hop na Sayaw</string>
+    <string name="natureOfDance_correct_answer_7">Modernong Sayaw</string>
+    <string name="natureOfDance_correct_answer_8">Sayaw sa Ballroom</string>
+    <string name="natureOfDance_correct_answer_9">Kontemporaryong Sayaw</string>
+    <string name="natureOfDance_correct_answer_10">Sayaw ng Piyesta</string>
+
+
+
+
+
+
+
+
+    <string name="natureOfDanceHard_question_1">Ang Hip-Hop ay isang set ng mga sayaw na partner na tinatangkilik sa parehong sosyal at kompetitibong paraan sa buong mundo?</string>
+    <string name="natureOfDanceHard_question_2">Ang Cheerdance ay isang kumbinasyon ng pagsigaw at pagsasayaw?</string>
+    <string name="natureOfDanceHard_question_3">Ang mga regional folk dance ay natatangi sa tiyak na mga lokalidad lamang?</string>
+    <string name="natureOfDanceHard_question_4">Ang sayaw na ito ay isang kumbinasyon ng mga sining ng pagsasayaw, tula, musika, at pagpipinta?</string>
+    <string name="natureOfDanceHard_question_5">Ang mga kaugalian at tradisyon sa pamamagitan ng mga hakbang sa sayaw at mga kasuotan ay napanatili sa festival dance?</string>
+    <string name="natureOfDanceHard_question_6">Ang gymnastics at mga acrobatic moves tulad ng cartwheels at hand springs ay kinakailangan para sa Cheerdance?</string>
+    <string name="natureOfDanceHard_question_7">Ang modern dance ay sumasama sa matibay na legwork at balanse ng ballet at mga galaw ng katawan ng modern dance?</string>
+    <string name="natureOfDanceHard_question_8">Mayroong 10 ibat ibang likas na sayaw sa mundo?</string>
+    <string name="natureOfDanceHard_question_9">Ang festival dance ay mga sayaw ng mga katutubong komunidad na nagpapakita ng mga katangian ng kultura ng mga tao sa tiyak na panahon at lugar?</string>
+    <string name="natureOfDanceHard_question_10">Ayon sa mga heograpikal na lokasyon, ang mga folk dance ay maaaring ikategorya bilang modern at contemporary na uri ng sayaw?</string>
+    <string name="natureOfDanceHard_question_11">Ito ay mga sayaw na may karaniwang mga batayang galaw na may bahagyang mga pagbabago?</string>
+    <string name="natureOfDanceHard_question_12">Ang contemporary dance ay istilo ng pagsasayaw kung saan ang mga mananayaw ay malayang nagpapahayag ng kanilang mga damdamin sa pamamagitan ng mga galaw?</string>
+    <string name="natureOfDanceHard_question_13">Ang mga folk dance ay maaaring maging relihiyoso o sekular sa kalikasan?</string>
+    <string name="natureOfDanceHard_question_14">Ang ballroom ay malawak na tinatangkilik sa entablado, pelikula, at telebisyon dahil sa mga aspeto ng pagganap at libangan nito?</string>
+    <string name="natureOfDanceHard_question_15">Ang ganitong uri ng sayaw ay natatangi sa tiyak na mga lokalidad lamang?</string>
+    <string name="natureOfDanceHard_question_16">Ang Ritual, Life-Cycle, at Occupational dance ay mga halimbawa ng anong likas na sayaw?</string>
+    <string name="natureOfDanceHard_question_17">Ang Hip-Hop ay isang istilo ng sayaw na isinasagawa sa musika ng hip-hop at karaniwang isinasayaw sa kalye?</string>
+    <string name="natureOfDanceHard_question_18">Ang mga folk dance ay karaniwang isinasagawa bilang parangal sa isang patron saint o bilang pasasalamat para sa masaganang ani?</string>
+    <string name="natureOfDanceHard_question_19">Ang traditional dance ay mga cultural dance na isinasagawa sa malalakas na tunog ng percussion instruments ng isang komunidad ng mga tao na may parehong kultura?</string>
+    <string name="natureOfDanceHard_question_20">Ang ballet ay isang artistikong, programmatic, scenic na sayaw na sinasamahan ng musika?</string>
+
+    <!-- Choices -->
+    <string-array name="natureOfDanceHard_choices_1">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_2">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_3">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_4">
+        <item>Hip-Hop Dance</item>
+        <item>Cheer Dance</item>
+        <item>Ballet Dance</item>
+        <item>Ballroom Dance</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_5">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_6">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_7">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_8">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_9">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_10">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_11">
+        <item>Pambansang Sayaw ng Bayan</item>
+        <item>Rehiyonal na Sayaw ng Bayan</item>
+        <item>Ritwal na Sayaw</item>
+        <item>Life-Cycle Dance</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_12">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_13">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_14">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_15">
+        <item>Rehiyonal na Sayaw ng Bayan</item>
+        <item>Ritwal na Sayaw</item>
+        <item>Pambansang Sayaw ng Bayan</item>
+        <item>Occupational Dance</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_16">
+        <item>Folk Dance</item>
+        <item>Kalsadang Sayaw</item>
+        <item>Festival Dance</item>
+        <item>Contemporary Dance</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_17">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_18">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_19">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_20">
+        <item>Tama</item>
+        <item>Hindi Tama</item>
+        <item>Mali</item>
+        <item>Marahil</item>
+    </string-array>
+
+    <!-- Correct Answers -->
+    <string name="natureOfDanceHard_correct_answer_1">Mali</string>
+    <string name="natureOfDanceHard_correct_answer_2">Tama</string>
+    <string name="natureOfDanceHard_correct_answer_3">Tama</string>
+    <string name="natureOfDanceHard_correct_answer_4">Ballet Dance</string>
+    <string name="natureOfDanceHard_correct_answer_5">Mali</string>
+    <string name="natureOfDanceHard_correct_answer_6">Tama</string>
+    <string name="natureOfDanceHard_correct_answer_7">Mali</string>
+    <string name="natureOfDanceHard_correct_answer_8">Mali</string>
+    <string name="natureOfDanceHard_correct_answer_9">Mali</string>
+    <string name="natureOfDanceHard_correct_answer_10">Mali</string>
+    <string name="natureOfDanceHard_correct_answer_11">Rehiyonal na Sayaw ng Bayan</string>
+    <string name="natureOfDanceHard_correct_answer_12">Mali</string>
+    <string name="natureOfDanceHard_correct_answer_13">Mali</string>
+    <string name="natureOfDanceHard_correct_answer_14">Tama</string>
+    <string name="natureOfDanceHard_correct_answer_15">Rehiyonal na Sayaw ng Bayan</string>
+    <string name="natureOfDanceHard_correct_answer_16">Folk Dance</string>
+    <string name="natureOfDanceHard_correct_answer_17">Tama</string>
+    <string name="natureOfDanceHard_correct_answer_18">Mali</string>
+    <string name="natureOfDanceHard_correct_answer_19">Mali</string>
+    <string name="natureOfDanceHard_correct_answer_20">Tama</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Pamagat ng Aralin 1 -->
+    <string name="lesson1_DancePeriods">Mga Panahon ng Sayaw</string>
+    <string name="lesson1_whatIsDance">Ano ang Pagsayaw</string>
+    <string name="lesson1_PreHistoric">Pre-Historiko</string>
+    <string name="lesson1_AncientEgypt">Sinaunang Ehipto</string>
+    <string name="lesson1_AncientGreek">Sinaunang Griyego</string>
+    <string name="lesson1_AncientRome">Sinaunang Roma</string>
+    <string name="lesson1_CatolicChurchInEurope">Simbahang Katoliko sa Europa</string>
+    <string name="lesson1_DarknEarlyMiddleAge">Madilim at Maagang Gitnang Panahon</string>
+    <string name="lesson1_EarlyRenaissance">Maagang Renasimiyento</string>
+    <string name="lesson1_EuropeIn15n16Century">Europa sa ika-15 at ika-16 Siglo</string>
+    <string name="lesson1_BenefitOfDance">Benepisyo ng Pag Sayaw</string>
+
+    <string name="lesson2_natureOfDance">Kalikasang ng Pag Sayaw</string>
+
+    <string name="DanceTopic">Ang sayaw ay ang paggalaw ng katawan sa isang ritmo, karaniwan sa musika at sa loob ng isang tiyak na espasyo, para ipahayag ang ideya o damdamin, maglabas ng enerhiya, o simpleng mag-enjoy. Ito ay isang pagpapahayag na sinasamahan ng musika, mula sa mga primitibong tao na nagpapahayag ng emosyon sa mga kaganapan tulad ng kapanganakan, kamatayan, at kasal, hanggang sa mga modernong anyo ng pagtitipon. Isa ito sa mga pinakalumang at pinaka-popular na anyo ng ehersisyo.</string>
+
+    <!-- Prehistoric Topic -->
+    <string name="prehistoric_Topic">Isang pangunahing anyo ng relihiyosong ritwal at panlipunang pagpapahayag sa mga primitibong kultura. Isang paraan ng pagkakaisa ng tribo at para sa panliligaw at pagpaparami. Isang pamamaraan ng pagsamba at komunikasyon, pati na rin ng karanasang nakapagpapagaling.</string>
+
+    <!-- Ancient Egypt -->
+    <string name="ancient_egypt_Topic">Ang sayaw ay naging ganap at ito ay mayamang naitala, makikita sa mga pinta sa pader, mga relief, at sa mga talaan sa hieroglyphs. Ito ay isang medium ng relihiyosong pagpapahayag.</string>
+
+    <!-- Ancient Greek -->
+    <string name="ancient_greek_Topic">Isang anyo ng edukasyong militar at libangan.</string>
+
+    <!-- Ancient Rome -->
+    <string name="ancient_rome_Topic">Sa panahon ng mga Romano, nagbago ang pagpapahalaga sa sining habang ang mga bansa ay yumayaman. Tumigil ang mga Romano sa paglikha at pagganap sa sining.</string>
+
+    <!-- Catholic Church -->
+    <string name="catolic_church_Topic">Inaprubahan ng mga Ama ng Kristiyanismo ang paggamit ng sayaw, sa kondisyon na ito ay banal at malalim. Ang sayaw ay naging bahagi ng mga pagsamba at aktibidad ng simbahan.</string>
+
+    <!-- Dark and Early Middle Ages -->
+    <string name="darkMiddleAges_Topic">Nagsagawa ng sayaw sa mga plaza ng nayon upang salubungin ang mga feudal lord. Ang mga karaniwang tao ay nag-enjoy sa mga sayaw na panlipunan, simula ng Sosyal na Sayawan. Dalawang uri ng sayaw ang isinagawa ng mga magsasaka: Round Dance (mga mananayaw ay magkakapit-bisig at bumubuo ng kadena sa isang bilog) at Couple Dance (mas kakaunti ang nagsasagawa dahil itinuturing na iskandalo).</string>
+
+    <!-- Renaissance -->
+    <string name="renaissance_Topic">Tinanggap sa mga korte habang unti-unting tumataas ang kapitalistang klase na nagbibigay ng mga patron ng kaalaman at sining sa Europa. Ang sayaw at sining ay nagkakaroon ng sigla, ang mga tagapagsaya ay naging mahalagang bahagi ng mga korte sa Italya at Pransya.</string>
+
+    <!-- Europe in 15th and 16th Century -->
+    <string name="europe15th_Topic">Maraming sayaw sa korte ang isinagawa ng mga maharlika, pati na rin ang pag-usbong ng ballet sa Italya at Pransya. Maraming iba pang anyo ng sayaw ang lumitaw at kumalat sa ibat ibang bansa.</string>
+
+    <string name="hello_blank_fragment">Kamusta, blangkong fragment</string>
+
+    <string name="benefitsOfDance_Physical">Pisikal</string>
+    <string name="benefitsOfDance_PhysicalTopic">Nagpapabuti ng cardiovascular endurance, koordinasyon, balanse, kakayahang umikot, at komposisyon ng katawan. Nagbabawas ng panganib ng sakit sa puso at ng index ng mass ng katawan, nagpapabuti ng lipid metabolism, at tumutulong sa paggalaw ng mga kasukasuan. Tumutulong din sa pagpapanatili ng bone density.</string>
+
+    <string name="benefitsOfDance_mental_Emotional">Sikolohikal/Pisikal</string>
+    <string name="benefitsOfDance_mental_EmotionalTopic">Tumutulong upang mapanatiling matalas ang isipan, nagbabawas ng posibilidad ng Dementia at Alzheimers Disease, sintomas ng depresyon, at nagpapataas ng tiwala sa sarili at imahe ng katawan. Tumutulong din sa pagpapalabas ng emosyonal at pisikal na tensyon.</string>
+
+    <string name="benefitsOfDance_Social">Panlipunan</string>
+    <string name="benefitsOfDance_SocialTopic">Nagbibigay ng pakiramdam ng sama-sama sa loob ng grupo, nag-uudyok ng positibong interaksyon at relasyon. Nag-aambag sa self-actualization ng mga indibidwal sa lipunan.</string>
+
+    <string name="benefitsOfDance_Cultural">Kultural</string>
+    <string name="benefitsOfDance_CulturalTopic">Nagtataguyod ng mga kultural na halaga.</string>
+
+    <string name="traditionalDance_FolknEthnic">Mga Tradisyonal na Sayaw (Folk at Etno).</string>
+    <string name="traditionalDance_FolknEthnicTopic">Mga sayaw mula sa mga katutubong komunidad na nagpapakita ng mga kultural na katangian. Pinananatili ang mga kaugalian at tradisyon sa pamamagitan ng mga hakbang sa sayaw at kasuotan.</string>
+
+    <string name="threeTypesofSocialDances">Tatlong Uri ng Sosyal na Sayaw.</string>
+    <string name="threeTypesofSocialDancesTopic">Ritwal na Sayaw, Sayaw ng Buhay na Siklo, at Sayaw ng Hanapbuhay. Ang sayaw ng hanapbuhay ay isang anyo ng sining na nagpapahayag ng masipag na halaga ng mga Pilipino mula sa ibat ibang lugar sa bansa, na nagpapakita ng kanilang lokal na kultura at kabuhayan.</string>
+
+    <string name="traditionalFolkDance">Folk Dance</string>
+    <string name="traditionalFolkDanceTopic">Ayon sa mga heograpikal na lokasyon, ang mga Folk Dances ay maaaring: \n Pambansa (mga sayaw na may karaniwang pangunahing galaw, na may kaunting pagbabago) at Lokal/Regional (mga sayaw na natatangi sa tiyak na lokalidad).</string>
+
+    <string name="traditionalModernContemporary">Moderno at Kontemporaryong Sayaw</string>
+    <string name="traditionalModernContemporaryTopic">Modernong Sayaw: isang estilo ng pagsasayaw kung saan ang mga mananayaw ay malayang nagpapahayag ng kanilang damdamin sa pamamagitan ng galaw. Kontemporaryong Sayaw: pinagsasama ang matibay na galaw ng binti at balanse ng ballet at galaw ng katawan ng modernong sayaw.</string>
+
+    <string name="cheerDance">Cheer Dance</string>
+    <string name="cheerDanceTopic">Isang kumbinasyon ng pagsigaw at pagsasayaw, kasama ang kinakailangang sigaw at mga acrobatic na galaw tulad ng cartwheels at hand springs.</string>
+
+    <string name="streetDance">Street Dance</string>
+    <string name="streetDanceTopic">HipHop: isang istilo ng sayaw na isinagawa sa musika ng hip-hop, karaniwang sinasayaw sa kalye, kasama ang ibat ibang istilo tulad ng breakdancing, locking, at popping.</string>
+
+    <string name="balletDance">Ballet</string>
+    <string name="balletDanceTopic">Mula sa Italyanong "BALLARE" na nangangahulugang SUMAYAW, at "BALLO" na tumutukoy sa MGA SAYAW NA ISINASAGAWA SA MGA BALLROOM. Isang artistikong sayaw na sinasamahan ng musika.</string>
+
+    <string name="ballroomDance">Ballroom</string>
+    <string name="ballroomDanceTopic">Isang hanay ng mga sayaw na may kasosyo, na tinatangkilik sa parehong panlipunan at mapagkumpitensyang paraan. Malawak na tinatangkilik sa entablado, pelikula, at telebisyon.</string>
+
+    <string name="festivalDance">Festival Dance</string>
+    <string name="festivalDanceTopic">Mga kultural na sayaw na isinasagawa sa mga malalakas na tunog ng percussion instruments ng komunidad, karaniwang isinasagawa bilang paggalang sa isang patron saint o bilang pasasalamat para sa masaganang ani. Maaaring relihiyoso o sekular ang mga Festival Dances.</string>
+</resources>

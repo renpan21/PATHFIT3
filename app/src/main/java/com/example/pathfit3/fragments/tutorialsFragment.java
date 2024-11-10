@@ -12,13 +12,34 @@ import com.example.pathfit3.animDance.animCheerDance;
 import com.example.pathfit3.animDance.animFolk;
 import com.example.pathfit3.animDance.animHipHop;
 import com.example.pathfit3.animDance.animSinulog;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import androidx.fragment.app.FragmentManager;
+import androidx.activity.OnBackPressedCallback;
+import androidx.fragment.app.FragmentTransaction;
 
 public class tutorialsFragment extends Fragment {
-
+    BottomNavigationView bottomNav;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_tutorials, container, false);
+
+        bottomNav = requireActivity().findViewById(R.id.nav_view);
+
+        // Handle back press
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.frame_layout, new homeFragment());
+                fragmentTransaction.commit();
+
+                if (bottomNav != null) {
+                    bottomNav.setSelectedItemId(R.id.navigation_home);
+                }
+            }
+        });
         setupCardListeners(view);
         return view;
     }

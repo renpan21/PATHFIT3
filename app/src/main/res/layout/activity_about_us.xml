@@ -8,212 +8,79 @@
     style="@style/screenBackGround"
     tools:context=".AboutUs">
 
-    <!-- Cerezo Expandable CardView -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/crdCerezo"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:cardUseCompatPadding="true">
+        android:layout_height="match_parent"
+        android:padding="16dp">
 
-        <RelativeLayout
-            android:id="@+id/relLayout"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="16dp">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="8dp"
-                android:src="@mipmap/cerezo" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/devName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/imageView"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="8dp"
-                android:text="@string/dev_Lorence"
-                android:fontFamily="@font/arvo"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/expandIcon"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="62dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="16dp"
-                android:layout_toEndOf="@+id/imageView"
-                android:src="@drawable/active_drop_icon" />
-        </RelativeLayout>
-
-        <!-- Expandable Content -->
-        <LinearLayout
-            android:id="@+id/infoCerezo"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:visibility="gone"
-            android:padding="16dp"
-            android:layout_marginTop="130dp"
-            >
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:id="@+id/imgGoogle"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/google"/>
-
-                <TextView
-                    android:id="@+id/txtEmail"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/imgGoogle"
-                    android:layout_margin="3dp"
-                    android:fontFamily="@font/arvo"
-                    android:text="@string/cerezo_gmail"
-                    android:textSize="16sp" />
-
-                <ImageView
-                    android:layout_marginTop="6dp"
-                    android:id="@+id/img"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/google"
-                    android:layout_below="@id/txtEmail"/>
-                <TextView
-                    android:layout_below="@id/txtEmail"
-                    android:id="@+id/txtEmai"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginStart="3dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/img"
-                    android:fontFamily="@font/arvo"
-                    android:text="try"
-                    android:textSize="16sp" />
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <!-- Mercado Expandable CardView -->
-    <androidx.cardview.widget.CardView
-        android:layout_below="@+id/crdCerezo"
-        android:id="@+id/crdMercado"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:cardUseCompatPadding="true">
-
-        <RelativeLayout
-            android:id="@+id/relLayout_mercado"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="16dp">
-
-            <ImageView
-                android:id="@+id/imageViewMercado"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="8dp"
-                android:src="@mipmap/mayor" />
+                android:text="@string/welcome_message"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:paddingBottom="16dp"
+                style="@style/textColorCloud" />
 
             <TextView
-                android:id="@+id/devNameMercado"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/imageViewMercado"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="8dp"
-                android:text="@string/dev_Jericho"
+                android:text="@string/mission_statement"
+                android:textSize="16sp"
+                android:paddingBottom="16dp"
                 android:fontFamily="@font/arvo"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                style="@style/textColorCloud" />
 
-            <ImageView
-                android:id="@+id/expandIcon1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="62dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="16dp"
-                android:layout_toEndOf="@+id/imageViewMercado"
-                android:src="@drawable/active_drop_icon" />
-        </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/audience_statement"
+                android:textSize="16sp"
+                android:paddingBottom="8dp"
+                android:fontFamily="@font/arvo"
+                style="@style/textColorCloud" />
 
-        <!-- Expandable Content -->
-        <LinearLayout
-            android:id="@+id/infoMercado"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:visibility="gone"
-            android:padding="16dp"
-            android:layout_marginTop="130dp"
-            >
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:id="@+id/imgGoogleMercado"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/google"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dance_curriculum"
+                android:textSize="16sp"
+                android:paddingBottom="8dp"
+                android:fontFamily="@font/arvo"
+                style="@style/textColorCloud" />
 
-                <TextView
-                    android:id="@+id/txtEmailMercado"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/imgGoogleMercado"
-                    android:layout_margin="3dp"
-                    android:fontFamily="@font/arvo"
-                    android:text="@string/cerezo_gmail"
-                    android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/structured_learning"
+                android:textSize="16sp"
+                android:paddingBottom="8dp"
+                android:fontFamily="@font/arvo"
+                style="@style/textColorCloud" />
 
-                <ImageView
-                    android:layout_marginTop="6dp"
-                    android:id="@+id/imgMercado"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/google"
-                    android:layout_below="@id/txtEmailMercado"/>
-                <TextView
-                    android:layout_below="@id/txtEmailMercado"
-                    android:id="@+id/txtEmaiMercado"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginStart="3dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/imgMercado"
-                    android:fontFamily="@font/arvo"
-                    android:text="try"
-                    android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/interactive_tutorials"
+                android:textSize="16sp"
+                android:paddingBottom="16dp"
+                android:fontFamily="@font/arvo"
+                style="@style/textColorCloud" />
 
-            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/passion_statement"
+                android:textSize="16sp"
+                android:fontFamily="@font/arvo"
+                style="@style/textColorCloud" />
 
         </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
+    </ScrollView>
 
 </RelativeLayout>

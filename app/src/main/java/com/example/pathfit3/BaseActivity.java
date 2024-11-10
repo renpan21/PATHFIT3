@@ -50,4 +50,5 @@ public class BaseActivity extends AppCompatActivity {
         Intent intent = new Intent(this, musicPlayer.class);
         startService(intent);
     }
+
 }

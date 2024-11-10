@@ -13,9 +13,8 @@
         android:id="@+id/manDancing"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:tint="@color/blackRock"
         android:layout_marginTop="100dp"
-        android:src="@mipmap/man_dancing"
+        android:src="@mipmap/pathfit3_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>

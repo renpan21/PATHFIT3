@@ -18,7 +18,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class animBallroom extends AppCompatActivity {
-    private RecyclerView recyclerView;
+     RecyclerView recyclerView;
     private VideoAdapter videoAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,15 +35,15 @@ public class animBallroom extends AppCompatActivity {
 
         // Sample video items
         List<VideoItem> videoItems = Arrays.asList(
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball1, "Ballroom Step1", "Description for Step 1."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball2, "Ballroom Step2", "Description for Step 2."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball3, "Ballroom Step3", "Description for Step 3."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball4, "Ballroom Step4", "Description for Step 4."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball5, "Ballroom Step5", "Description for Step 5."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball6, "Ballroom Step6", "Description for Step 6."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball7, "Ballroom Step7", "Description for Step 7."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball8, "Ballroom Step8", "Description for Step 8."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball9, "Ballroom Step9", "Description for Step 9.")
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball1, "Ballroom Step1"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball2, "Ballroom Step2"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball3, "Ballroom Step3"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball4, "Ballroom Step4"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball5, "Ballroom Step5"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball6, "Ballroom Step6"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball7, "Ballroom Step7"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball8, "Ballroom Step8"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.ball9, "Ballroom Step9")
         );
 
         videoAdapter = new VideoAdapter(this, videoItems);

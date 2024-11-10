@@ -35,10 +35,10 @@ public class animFolk extends AppCompatActivity {
 
 
         List<VideoItem> videoItems = Arrays.asList(
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.folk1, "Folk Dance Step1", "Description for Step 1."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.folk2, "Folk Dance Step2", "Description for Step 2."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.folk3, "Folk Dance Step3", "Description for Step 3."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.folk4, "Folk Dance Step4", "Description for Step 4.")
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.folk1, "Folk Dance Step1"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.folk2, "Folk Dance Step2"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.folk3, "Folk Dance Step3"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.folk4, "Folk Dance Step4")
 
         );
 
