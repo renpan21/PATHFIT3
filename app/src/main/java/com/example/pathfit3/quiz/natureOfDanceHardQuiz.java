@@ -16,6 +16,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.pathfit3.R;
+
 import com.example.pathfit3.quizQnA.natureOfDanceHardQnA;
 
 import java.util.ArrayList;
@@ -61,7 +62,13 @@ public class natureOfDanceHardQuiz extends AppCompatActivity implements View.OnC
         ansD.setOnClickListener(this);
         submitBtn.setOnClickListener(this);
 
-        initializeQuestions();
+        // Initialize the quiz data
+        natureOfDanceHardQnA quizData = new natureOfDanceHardQnA(this);
+        String[] questionsArray = quizData.getQuestions();
+        String[][] choicesArray = quizData.getChoices();
+        String[] correctAnswersArray = quizData.getCorrectAnswers();
+
+        initializeQuestions(questionsArray, choicesArray, correctAnswersArray);
         Collections.shuffle(questions);
         totalQuestions = questions.size();
 
@@ -73,6 +80,8 @@ public class natureOfDanceHardQuiz extends AppCompatActivity implements View.OnC
             return insets;
         });
     }
+
+    @Override
     public void onClick(View view) {
         ansA.setBackgroundColor(Color.WHITE);
         ansB.setBackgroundColor(Color.WHITE);
@@ -114,7 +123,6 @@ public class natureOfDanceHardQuiz extends AppCompatActivity implements View.OnC
     }
 
     void updateQuestionIndex() {
-        //nagsasabi kung pang ilang question na si user ex: total quest 1/10
         totalQuestionTxt.setText("Question " + (currQuestionIndex + 1) + " of " + totalQuestions);
     }
 
@@ -123,13 +131,13 @@ public class natureOfDanceHardQuiz extends AppCompatActivity implements View.OnC
             countDownTimer.cancel();
         }
 
-        String passStatus = score > totalQuestions * 0.60 ? "Passed" : "Failed";
+        String passStatus = score > totalQuestions * 0.60 ? getString(R.string.dialog_title_passed) : getString(R.string.dialog_title_failed);
 
         new AlertDialog.Builder(this)
                 .setTitle(passStatus)
-                .setMessage("Score is " + score + " out of " + totalQuestions)
-                .setNeutralButton("Restart Quiz", (dialogInterface, i) -> restartQuiz())
-                .setNegativeButton("Finish Quiz", (dialogInterface, i) -> finish())
+                .setMessage(getString(R.string.dialog_message, score, totalQuestions))
+                .setNeutralButton(R.string.dialog_neutral_button, (dialogInterface, i) -> restartQuiz())
+                .setNegativeButton(R.string.dialog_negative_button, (dialogInterface, i) -> finish())
                 .setCancelable(false)
                 .show();
     }
@@ -153,14 +161,14 @@ public class natureOfDanceHardQuiz extends AppCompatActivity implements View.OnC
         }
     }
 
-    private void initializeQuestions() {
+    private void initializeQuestions(String[] questionsArray, String[][] choicesArray, String[] correctAnswersArray) {
         questions = new ArrayList<>();
 
-        for (int i = 0; i < natureOfDanceHardQnA.question.length; i++) {
+        for (int i = 0; i < questionsArray.length; i++) {
             questions.add(new Question(
-                    natureOfDanceHardQnA.question[i],
-                    natureOfDanceHardQnA.choices[i],
-                    natureOfDanceHardQnA.correctAnswers[i]
+                    questionsArray[i],
+                    choicesArray[i],
+                    correctAnswersArray[i]
             ));
         }
     }

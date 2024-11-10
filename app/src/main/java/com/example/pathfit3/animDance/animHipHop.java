@@ -36,12 +36,12 @@ public class animHipHop extends AppCompatActivity {
 
 
         List<VideoItem> videoItems = Arrays.asList(
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.hh1, "Hip-Hop Step1", "Description for Step 1."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.hh2, "Hip-Hop Step2", "Description for Step 2."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.hh3, "Hip-Hop Step3", "Description for Step 3."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.hh4, "Hip-Hop Step4", "Description for Step 4."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.hh5, "Hip-Hop Step5", "Description for Step 5."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.hh6, "Hip-Hop Step6", "Description for Step 6.")
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.hh1, "Hip-Hop Step1"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.hh2, "Hip-Hop Step2"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.hh3, "Hip-Hop Step3"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.hh4, "Hip-Hop Step4"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.hh5, "Hip-Hop Step5"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.hh6, "Hip-Hop Step6")
 
         );
 

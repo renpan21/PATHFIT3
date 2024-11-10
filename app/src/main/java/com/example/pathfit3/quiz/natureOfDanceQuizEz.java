@@ -40,7 +40,6 @@ public class natureOfDanceQuizEz extends AppCompatActivity implements View.OnCli
     private final long TIMER_DURATION = 61000;
     private final long TIMER_INTERVAL = 1000;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +61,13 @@ public class natureOfDanceQuizEz extends AppCompatActivity implements View.OnCli
         ansD.setOnClickListener(this);
         submitBtn.setOnClickListener(this);
 
-        initializeQuestions();
+
+        natureOfDanceQuizQnA quizData = new natureOfDanceQuizQnA(this);
+        String[] questionsArray = quizData.getQuestions();
+        String[][] choicesArray = quizData.getChoices();
+        String[] correctAnswersArray = quizData.getCorrectAnswers();
+
+        initializeQuestions(questionsArray, choicesArray, correctAnswersArray);
         Collections.shuffle(questions);
         totalQuestions = questions.size();
 
@@ -74,6 +79,7 @@ public class natureOfDanceQuizEz extends AppCompatActivity implements View.OnCli
             return insets;
         });
     }
+
     public void onClick(View view) {
         ansA.setBackgroundColor(Color.WHITE);
         ansB.setBackgroundColor(Color.WHITE);
@@ -123,18 +129,18 @@ public class natureOfDanceQuizEz extends AppCompatActivity implements View.OnCli
             countDownTimer.cancel();
         }
 
-        String passStatus = score > totalQuestions * 0.60 ? "Passed" : "Failed";
+        String passStatus = score > totalQuestions * 0.60 ? getString(R.string.dialog_title_passed) : getString(R.string.dialog_title_failed);
 
         new AlertDialog.Builder(this)
                 .setTitle(passStatus)
-                .setMessage("Score is " + score + " out of " + totalQuestions)
-                .setPositiveButton("Start Next Quiz", (dialogInterface, i) -> {
+                .setMessage(getString(R.string.dialog_message, score, totalQuestions))
+                .setPositiveButton(R.string.dialog_positive_button, (dialogInterface, i) -> {
                     Intent intent = new Intent(this, natureOfDanceQuizQnA.class);
                     startActivity(intent);
                     finish();
                 })
-                .setNeutralButton("Restart Quiz", (dialogInterface, i) -> restartQuiz())
-                .setNegativeButton("Finish Quiz", (dialogInterface, i) -> finish())
+                .setNeutralButton(R.string.dialog_neutral_button, (dialogInterface, i) -> restartQuiz())
+                .setNegativeButton(R.string.dialog_negative_button, (dialogInterface, i) -> finish())
                 .setCancelable(false)
                 .show();
     }
@@ -158,14 +164,14 @@ public class natureOfDanceQuizEz extends AppCompatActivity implements View.OnCli
         }
     }
 
-    private void initializeQuestions() {
+    private void initializeQuestions(String[] questionsArray, String[][] choicesArray, String[] correctAnswersArray) {
         questions = new ArrayList<>();
 
-        for (int i = 0; i < natureOfDanceQuizQnA.question.length; i++) {
+        for (int i = 0; i < questionsArray.length; i++) {
             questions.add(new Question(
-                    natureOfDanceQuizQnA.question[i],
-                    natureOfDanceQuizQnA.choices[i],
-                    natureOfDanceQuizQnA.correctAnswers[i]
+                    questionsArray[i],
+                    choicesArray[i],
+                    correctAnswersArray[i]
             ));
         }
     }

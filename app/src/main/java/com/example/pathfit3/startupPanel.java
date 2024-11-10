@@ -1,11 +1,14 @@
 package com.example.pathfit3;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.OnBackPressedCallback;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -30,6 +33,12 @@ public class startupPanel extends BaseActivity {
             Intent intent = new Intent(startupPanel.this, homeModule.class);
             startActivity(intent);
         });
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                showExit();
+            }
+        });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -41,4 +50,19 @@ public class startupPanel extends BaseActivity {
         btnGetStarted = findViewById(R.id.btnGetStarted);
 
     }
+    private void showExit() {
+        new AlertDialog.Builder(this)
+                .setTitle("Exit")
+                .setMessage("Do you want to exit the app?")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        stopService(new Intent(startupPanel.this, musicPlayer.class)); // Stop music
+                        finishAffinity(); // Close all activities and terminate the app
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
+    }
+
 }

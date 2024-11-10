@@ -39,6 +39,9 @@ android {
 dependencies {
     val multidex_version = "2.0.1"
     implementation("androidx.multidex:multidex:$multidex_version")
+//    implementation("androidx.media3:media3-exoplayer:1.4.1")
+//    implementation("androidx.media3:media3-ui:1.4.1")
+//    implementation("androidx.media3:media3-common:1.4.1")
     implementation(libs.appcompat)
 //    implementation(libs.androidx.core)
     implementation(libs.androidx.core)

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">PATHFIT3</string>
 
@@ -8,14 +9,818 @@
     <string name="title_tutorials">Tutorials</string>
     <string name="title_settings">Settings</string>
 
+    <string name="fragment_intro">Teaching you to dance</string>
+    <string name="title_about">About Us</string>
+    <string name="startUp">Welcome!</string>
+    <string name="startUp1">Ready To Dance?</string>
+
     <!--Developers Name-->
     <string name="dev_Lorence">Lorence Cerezo</string>
     <string name="dev_Jerard">Jerard Maliwat</string>
     <string name="dev_Jericho">Jericho Mercado</string>
+
     <string name="dev_Reniel">Reniel John Supan</string>
 
     <string name="cerezo_gmail">lorence2518cerezo@gmail.com</string>
     <string name="maliwat_gmail">Jerardmaliwat07@gmail.com</string>
+
+
+    <string name="dialog_title_passed">Passed</string>
+    <string name="dialog_title_failed">Failed</string>
+    <string name="dialog_message">Score is %1$d out of %2$d</string>
+    <string name="dialog_positive_button">Start Next Quiz</string>
+    <string name="dialog_neutral_button">Restart Quiz</string>
+    <string name="dialog_negative_button">Finish Quiz</string>
+
+
+
+    <string name="welcome_message">Welcome to PATHFIT3!</string>
+    <string name="mission_statement">At PATHFIT3, we believe that dance is not just a series of movements; it’s a dynamic form of expression that enriches lives. Our goal is to make dance education accessible to everyone, regardless of experience. Through our innovative Android app, we’re dedicated to helping you explore and master the art of dance.</string>
+    <string name="audience_statement">Whether youre a Student or a PE Teacher looking to enhance your learning and dance skills, PATHFIT3 is designed to support you at every stage of your dance journey. Our app features:\n</string>
+    <string name="dance_curriculum">• Comprehensive Dance Curriculum: \nOur carefully curated curriculum covers a variety of dance styles, from ballet and hip-hop to contemporary and cheer dance. Each section includes detailed lessons that break down techniques and movements, allowing you to learn progressively.\n</string>
+    <string name="structured_learning">• Structured Learning Paths: \nWe offer tailored learning paths that guide you through each dance style, ensuring you build a solid foundation before moving on to more advanced techniques. This structured approach helps you develop confidence and skill over time.\n</string>
+    <string name="interactive_tutorials">• Interactive Tutorials: \nEngage with our step-by-step video tutorials that provide clear demonstrations and helpful tips for mastering each dance move. You’ll be able to practice at your own pace, with the ability to revisit lessons as needed.\n</string>
+    <string name="passion_statement">At PATHFIT3, we’re passionate about fostering a love for dance while promoting fitness and well-being. We invite you to download the PATHFIT3 app today and embark on a rewarding journey of Pathfit 3 dance education!</string>
+
+
+
+
+
+>
+    <string name="question_1_benefitDanceHard">Improves body coordination and flexibility</string>
+    <string name="question_2_benefitDanceHard">Lower body mass index</string>
+    <string name="question_3_benefitDanceHard">Helps keep the brain sharp</string>
+    <string name="question_4_benefitDanceHard">Increase self esteem</string>
+    <string name="question_5_benefitDanceHard">Improves body image</string>
+    <string name="question_6_benefitDanceHard">Give sense of togetherness within a group</string>
+    <string name="question_7_benefitDanceHard">Promotes cultural values</string>
+    <string name="question_8_benefitDanceHard">Contribute to the individuals self-actualization in society</string>
+    <string name="question_9_benefitDanceHard">Decreases depressive symptoms</string>
+    <string name="question_10_benefitDanceHard">Improve lipid metabolism</string>
+    <string name="question_11_benefitDanceHard">Aids in releasing emotional and physical tension</string>
+    <string name="question_12_benefitDanceHard">Lower resting heart rate</string>
+    <string name="question_13_benefitDanceHard">Decrease incidence of Dementia and Alzheimers Disease</string>
+    <string name="question_14_benefitDanceHard">Develop cardiovascular endurance</string>
+    <string name="question_15_benefitDanceHard">Lower risks of cardiovascular diseases</string>
+    <string name="question_16_benefitDanceHard">Encourages positive social interaction</string>
+    <string name="question_17_benefitDanceHard">Enable joint mobility</string>
+    <string name="question_18_benefitDanceHard">Helps improve and maintain bone density</string>
+    <string name="question_19_benefitDanceHard">Encourages interpersonal relationships in group</string>
+    <string name="question_20_benefitDanceHard">Improves balance and body composition</string>
+
+    <string-array name="choices_1_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_2_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_3_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_4_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_5_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_6_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_7_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_8_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_9_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_10_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_11_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_12_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_13_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_14_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_15_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_16_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_17_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_18_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_19_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="choices_20_benefitDanceHard">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+
+    <string name="correct_answer_1_benefitDanceHard">Physical</string>
+    <string name="correct_answer_2_benefitDanceHard">Physical</string>
+    <string name="correct_answer_3_benefitDanceHard">Emotional/Mental</string>
+    <string name="correct_answer_4_benefitDanceHard">Emotional/Mental</string>
+    <string name="correct_answer_5_benefitDanceHard">Emotional/Mental</string>
+    <string name="correct_answer_6_benefitDanceHard">Social</string>
+    <string name="correct_answer_7_benefitDanceHard">Cultural</string>
+    <string name="correct_answer_8_benefitDanceHard">Social</string>
+    <string name="correct_answer_9_benefitDanceHard">Emotional/Mental</string>
+    <string name="correct_answer_10_benefitDanceHard">Physical</string>
+    <string name="correct_answer_11_benefitDanceHard">Emotional/Mental</string>
+    <string name="correct_answer_12_benefitDanceHard">Physical</string>
+    <string name="correct_answer_13_benefitDanceHard">Emotional/Mental</string>
+    <string name="correct_answer_14_benefitDanceHard">Physical</string>
+    <string name="correct_answer_15_benefitDanceHard">Physical</string>
+    <string name="correct_answer_16_benefitDanceHard">Social</string>
+    <string name="correct_answer_17_benefitDanceHard">Physical</string>
+    <string name="correct_answer_18_benefitDanceHard">Physical</string>
+    <string name="correct_answer_19_benefitDanceHard">Social</string>
+    <string name="correct_answer_20_benefitDanceHard">Cultural</string>
+
+
+
+
+
+
+
+    <string name="benefitDanceEz_question_1">Improves body coordination and flexibility</string>
+    <string name="benefitDanceEz_question_2">Lower body mass index</string>
+    <string name="benefitDanceEz_question_3">Helps keep the brain sharp</string>
+    <string name="benefitDanceEz_question_4">Increase self-esteem</string>
+    <string name="benefitDanceEz_question_5">Improves body image</string>
+    <string name="benefitDanceEz_question_6">Does dance enable joint mobility?</string>
+    <string name="benefitDanceEz_question_7">Does dance help improve and maintain bone density?</string>
+    <string name="benefitDanceEz_question_8">Does dance encourage interpersonal relationships in a group?</string>
+    <string name="benefitDanceEz_question_9">Does dance improve balance and body composition?</string>
+    <string name="benefitDanceEz_question_10">Does dance lower risks of cardiovascular diseases?</string>
+
+    <!-- Correct Answers -->
+    <string name="benefitDanceEz_correct_answer_1">Physical</string>
+    <string name="benefitDanceEz_correct_answer_2">Physical</string>
+    <string name="benefitDanceEz_correct_answer_3">Emotional/Mental</string>
+    <string name="benefitDanceEz_correct_answer_4">Emotional/Mental</string>
+    <string name="benefitDanceEz_correct_answer_5">Emotional/Mental</string>
+    <string name="benefitDanceEz_correct_answer_6">True</string>
+    <string name="benefitDanceEz_correct_answer_7">True</string>
+    <string name="benefitDanceEz_correct_answer_8">True</string>
+    <string name="benefitDanceEz_correct_answer_9">True</string>
+    <string name="benefitDanceEz_correct_answer_10">True</string>
+
+    <!-- Choices Arrays -->
+    <string-array name="benefitDanceEz_choices_1">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_2">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_3">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_4">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_5">
+        <item>Physical</item>
+        <item>Emotional/Mental</item>
+        <item>Social</item>
+        <item>Cultural</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_6">
+        <item>True</item>
+        <item>Maybe</item>
+        <item>False</item>
+        <item>Social</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_7">
+        <item>False</item>
+        <item>True</item>
+        <item>Not True</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_8">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_9">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+    <string-array name="benefitDanceEz_choices_10">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+
+
+
+
+    <!-- Questions -->
+    <string name="dancePeriodHard_question_1">In Pre-Historic era, dance reflected in wall paintings, reliefs, and in the literary record in hieroglyphs?</string>
+    <string name="dancePeriodHard_question_2">On which dance period, dance was used as a medium of religious expression?</string>
+    <string name="dancePeriodHard_question_3">In Ancient Rome era, dance was considered as a form of entertainment and display?</string>
+    <string name="dancePeriodHard_question_4">Dances became part of worships and church services during Ancient Egypt era?</string>
+    <string name="dancePeriodHard_question_5">On which dance period, the Christian Fathers approved the use of dance, provided that its form and intent were holy and profound?</string>
+    <string name="dancePeriodHard_question_6">The beginning of Social Dancing was happened on which dance period?</string>
+    <string name="dancePeriodHard_question_7">In the Renaissance era, dance was wholly accepted in the courts in Europe?</string>
+    <string name="dancePeriodHard_question_8">In Couple dance, dancers hold each other by hand, forming a long chain and move about in an open closed circle?</string>
+    <string name="dancePeriodHard_question_9">Round dance was not popular than Couple dance as it was considered scandalous when first seen?</string>
+    <string name="dancePeriodHard_question_10">In Ancient Greek era, dance was an aid to military education?</string>
+    <string name="dancePeriodHard_question_11">On which dance period, people performed dance in village squares to welcome feudal lords in the castles?</string>
+    <string name="dancePeriodHard_question_12">More court dances performed by nobility came about as well as rise of art in ballet in Italy and France?</string>
+    <string name="dancePeriodHard_question_13">On which dance period, common people amused themselves by doing dances that were social in character?</string>
+    <string name="dancePeriodHard_question_14">Did Dance and art in general gain Impetus?</string>
+    <string name="dancePeriodHard_question_15">There are five (5) dance steps of peasants?</string>
+    <string name="dancePeriodHard_question_16">Dancing is one of the oldest and most popular forms of exercise?</string>
+    <string name="dancePeriodHard_question_17">Dance has evolved to modern forms of social dancing?</string>
+    <string name="dancePeriodHard_question_18">There are three (3) types of dancing performed by peasants?</string>
+    <string name="dancePeriodHard_question_19">During the Ancient Egypt era, dance was a major form of religious, ritual, and social expression with primitive cultures?</string>
+    <string name="dancePeriodHard_question_20">During the Ancient Rome era, people stopped valuing such qualities in art as the nation grew wealthy and powerful?</string>
+
+    <!-- Choices Arrays -->
+    <string-array name="dancePeriodHard_choices_1">
+        <item>True</item>
+        <item>False</item>
+        <item>Ancient Greek era</item>
+        <item>Ancient Rome era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_2">
+        <item>Ancient Egypt era</item>
+        <item>Pre-Historic era</item>
+        <item>Ancient Greek era</item>
+        <item>Catholic Church in Europe era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_3">
+        <item>True</item>
+        <item>False</item>
+        <item>Ancient Greek era</item>
+        <item>Ancient Rome era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_4">
+        <item>True</item>
+        <item>False</item>
+        <item>Ancient Greek era</item>
+        <item>Ancient Rome era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_5">
+        <item>Catholic Church in Europe era</item>
+        <item>Pre-Historic era</item>
+        <item>Ancient Greek era</item>
+        <item>Dark and Early Middle Ages era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_6">
+        <item>Ancient Rome era</item>
+        <item>The Renaissance era</item>
+        <item>Dark and Early Middle Ages era</item>
+        <item>Europe in 15th and 16th Century era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_7">
+        <item>True</item>
+        <item>False</item>
+        <item>Ancient Greek era</item>
+        <item>Ancient Rome era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_8">
+        <item>True</item>
+        <item>False</item>
+        <item>Ancient Greek era</item>
+        <item>Ancient Rome era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_9">
+        <item>True</item>
+        <item>False</item>
+        <item>Ancient Greek era</item>
+        <item>Ancient Rome era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_10">
+        <item>True</item>
+        <item>False</item>
+        <item>Ancient Greek era</item>
+        <item>Ancient Rome era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_11">
+        <item>Dark and Early Middle Ages era</item>
+        <item>Catholic Church in Europe era</item>
+        <item>The Renaissance era</item>
+        <item>Europe in 15th and 16th Century era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_12">
+        <item>True</item>
+        <item>False</item>
+        <item>Ancient Greek era</item>
+        <item>Ancient Rome era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_13">
+        <item>The Renaissance era</item>
+        <item>Catholic Church in Europe era</item>
+        <item>Dark and Early Middle Ages era</item>
+        <item>Ancient Rome era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_14">
+        <item>True</item>
+        <item>False</item>
+        <item>Ancient Greek era</item>
+        <item>Ancient Rome era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_15">
+        <item>True</item>
+        <item>False</item>
+        <item>Ancient Greek era</item>
+        <item>Ancient Rome era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_16">
+        <item>True</item>
+        <item>False</item>
+        <item>Ancient Greek era</item>
+        <item>Ancient Rome era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_17">
+        <item>True</item>
+        <item>False</item>
+        <item>Ancient Greek era</item>
+        <item>Ancient Rome era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_18">
+        <item>True</item>
+        <item>False</item>
+        <item>Ancient Greek era</item>
+        <item>Ancient Rome era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_19">
+        <item>True</item>
+        <item>False</item>
+        <item>Ancient Greek era</item>
+        <item>Ancient Rome era</item>
+    </string-array>
+    <string-array name="dancePeriodHard_choices_20">
+        <item>True</item>
+        <item>False</item>
+        <item>Ancient Greek era</item>
+        <item>Ancient Rome era</item>
+    </string-array>
+
+    <!-- Correct Answers -->
+    <string name="dancePeriodHard_correct_answer_1">False</string>
+    <string name="dancePeriodHard_correct_answer_2">Ancient Egypt era</string>
+    <string name="dancePeriodHard_correct_answer_3">False</string>
+    <string name="dancePeriodHard_correct_answer_4">False</string>
+    <string name="dancePeriodHard_correct_answer_5">Catholic Church in Europe era</string>
+    <string name="dancePeriodHard_correct_answer_6">Dark and Early Middle Ages era</string>
+    <string name="dancePeriodHard_correct_answer_7">True</string>
+    <string name="dancePeriodHard_correct_answer_8">False</string>
+    <string name="dancePeriodHard_correct_answer_9">False</string>
+    <string name="dancePeriodHard_correct_answer_10">True</string>
+    <string name="dancePeriodHard_correct_answer_11">Dark and Early Middle Ages era</string>
+    <string name="dancePeriodHard_correct_answer_12">True</string>
+    <string name="dancePeriodHard_correct_answer_13">Dark and Early Middle Ages era</string>
+    <string name="dancePeriodHard_correct_answer_14">True</string>
+    <string name="dancePeriodHard_correct_answer_15">False</string>
+    <string name="dancePeriodHard_correct_answer_16">True</string>
+    <string name="dancePeriodHard_correct_answer_17">True</string>
+    <string name="dancePeriodHard_correct_answer_18">False</string>
+    <string name="dancePeriodHard_correct_answer_19">False</string>
+    <string name="dancePeriodHard_correct_answer_20">True</string>
+
+
+    <!-- Quiz Questions -->
+    <string name="dancePeriodsEZ_question_1">Dance in this period are a major form of religious, ritual, and social expression with primitive culture?</string>
+    <string name="dancePeriodsEZ_question_2">Dance in this period are reflected in wall paintings, reliefs, and in the literary record in hieroglyphs?</string>
+    <string name="dancePeriodsEZ_question_3">Dance in this period are a form of entertainment and display?</string>
+    <string name="dancePeriodsEZ_question_4">Dance in this period became part of worships and church services?</string>
+    <string name="dancePeriodsEZ_question_5">In this period, people stopped valuing such qualities in art as the nation grew wealthy and powerful?</string>
+    <string name="dancePeriodsEZ_question_6">In this period, people performed dance in village squares to welcome feudal lords in the castles?</string>
+    <string name="dancePeriodsEZ_question_7">In this period, the common people amused themselves by doing dances that were social in character?</string>
+    <string name="dancePeriodsEZ_question_8">In this period, dance was wholly accepted in the courts as a gradual increase of the capitalist class produced patrons of learning and art in Europe.</string>
+    <string name="dancePeriodsEZ_question_9">In this period, more court dances performed by nobility came about as well as rise of art in ballet in Italy and France?</string>
+    <string name="dancePeriodsEZ_question_10">In this period, several other dance forms continued to sprout and spread across several countries?</string>
+
+    <!-- Choices -->
+    <string-array name="dancePeriodsEZ_choices_1">
+        <item>Pre-Historic Era</item>
+        <item>Ancient Egypt Era</item>
+        <item>Ancient Greek Era</item>
+        <item>Ancient Rome Era</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_2">
+        <item>Pre-Historic Era</item>
+        <item>Ancient Egypt Era</item>
+        <item>Ancient Rome Era</item>
+        <item>Catholic Church in Europe Era</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_3">
+        <item>Pre-Historic Era</item>
+        <item>Ancient Egypt Era</item>
+        <item>Ancient Rome Era</item>
+        <item>Catholic Church in Europe Era</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_4">
+        <item>Pre-Historic Era</item>
+        <item>Ancient Egypt Era</item>
+        <item>Ancient Rome Era</item>
+        <item>Catholic Church in Europe Era</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_5">
+        <item>Ancient Egypt Era</item>
+        <item>Ancient Greek Era</item>
+        <item>Pre-Historic Era</item>
+        <item>Ancient Rome Era</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_6">
+        <item>Ancient Rome Era</item>
+        <item>Catholic Church in Europe Era</item>
+        <item>Dark and Early Middle Ages Era</item>
+        <item>Pre-Historic Era</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_7">
+        <item>Ancient Rome Era</item>
+        <item>Catholic Church in Europe Era</item>
+        <item>Pre-Historic Era</item>
+        <item>Dark and Early Middle Ages Era</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_8">
+        <item>The Renaissance Era</item>
+        <item>Catholic Church in Europe Era</item>
+        <item>Ancient Egypt Era</item>
+        <item>Dark and Early Middle Ages Era</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_9">
+        <item>The Renaissance Era</item>
+        <item>Catholic Church in Europe Era</item>
+        <item>Europe in 15th and 16th Century Era</item>
+        <item>Dark and Early Middle Ages Era</item>
+    </string-array>
+    <string-array name="dancePeriodsEZ_choices_10">
+        <item>Europe in 15th and 16th Century Era</item>
+        <item>Dark and Early Middle Ages Era</item>
+        <item>Catholic Church in Europe Era</item>
+        <item>The Renaissance Era</item>
+    </string-array>
+
+    <!-- Correct Answers -->
+    <string name="dancePeriodsEZ_correct_answer_1">Pre-Historic Era</string>
+    <string name="dancePeriodsEZ_correct_answer_2">Ancient Egypt Era</string>
+    <string name="dancePeriodsEZ_correct_answer_3">Ancient Greek Era</string>
+    <string name="dancePeriodsEZ_correct_answer_4">Catholic Church in Europe Era</string>
+    <string name="dancePeriodsEZ_correct_answer_5">Ancient Rome Era</string>
+    <string name="dancePeriodsEZ_correct_answer_6">Dark and Early Middle Ages Era</string>
+    <string name="dancePeriodsEZ_correct_answer_7">Dark and Early Middle Ages Era</string>
+    <string name="dancePeriodsEZ_correct_answer_8">The Renaissance Era</string>
+    <string name="dancePeriodsEZ_correct_answer_9">Europe in 15th and 16th Century Era</string>
+    <string name="dancePeriodsEZ_correct_answer_10">Europe in 15th and 16th Century Era</string>
+
+
+
+    <string name="natureOfDance_question_1">These are dances of indigenous communities that show cultural traits of people in specific time and place?</string>
+    <string name="natureOfDance_question_2">This dance is a combination of cheering and dancing?</string>
+    <string name="natureOfDance_question_3">This dance may be religious or secular in nature?</string>
+    <string name="natureOfDance_question_4">This dance was taken from the Italian word Ballare, meaning to dance, and Ballo, referring to dances performed in ballroom?</string>
+    <string name="natureOfDance_question_5">It is a dance style performed to hip-hop music and usually danced in the street?</string>
+    <string name="natureOfDance_question_6">This dance includes a wide range of styles primarily breaking, locking, and popping?</string>
+    <string name="natureOfDance_question_7">It is a style of dancing where dancers are free to express their feelings through movements?</string>
+    <string name="natureOfDance_question_8">It is a set of partner dances which are enjoyed both socially and competitively around the world?</string>
+    <string name="natureOfDance_question_9">This dance incorporates the strong legwork and balance of ballet and trunk movements of modern dance?</string>
+    <string name="natureOfDance_question_10">This dance is usually done in honor of a patron saint or as a thanksgiving for a bountiful harvest?</string>
+
+    <string-array name="natureOfDance_choices_1">
+        <item>Traditional Dance</item>
+        <item>Modern Dance</item>
+        <item>Contemporary Dance</item>
+        <item>Cheer Dance</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_2">
+        <item>Festival Dance</item>
+        <item>Ballroom Dance</item>
+        <item>Cheer Dance</item>
+        <item>Street Dance</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_3">
+        <item>Hip-Hop Dance</item>
+        <item>Folk Dance</item>
+        <item>Modern Dance</item>
+        <item>Festival Dance</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_4">
+        <item>Traditional Dance</item>
+        <item>Street Dance</item>
+        <item>Cheer Dance</item>
+        <item>Ballet Dance</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_5">
+        <item>Folk Dance</item>
+        <item>Contemporary Dance</item>
+        <item>Street Dance</item>
+        <item>Ballroom Dance</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_6">
+        <item>Hip-Hop Dance</item>
+        <item>Traditional Dance</item>
+        <item>Folk Dance</item>
+        <item>Contemporary Dance</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_7">
+        <item>Cheer Dance</item>
+        <item>Modern Dance</item>
+        <item>Contemporary Dance</item>
+        <item>Traditional Dance</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_8">
+        <item>Ballroom Dance</item>
+        <item>Ballet Dance</item>
+        <item>Festival Dance</item>
+        <item>Folk Dance</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_9">
+        <item>Folk Dance</item>
+        <item>Traditional Dance</item>
+        <item>Modern Dance</item>
+        <item>Contemporary Dance</item>
+    </string-array>
+    <string-array name="natureOfDance_choices_10">
+        <item>Festival Dance</item>
+        <item>Folk Dance</item>
+        <item>Street Dance</item>
+        <item>Ballroom Dance</item>
+    </string-array>
+
+    <string name="natureOfDance_correct_answer_1">Traditional Dance</string>
+    <string name="natureOfDance_correct_answer_2">Cheer Dance</string>
+    <string name="natureOfDance_correct_answer_3">Festival Dance</string>
+    <string name="natureOfDance_correct_answer_4">Ballet Dance</string>
+    <string name="natureOfDance_correct_answer_5">Street Dance</string>
+    <string name="natureOfDance_correct_answer_6">Hip-Hop Dance</string>
+    <string name="natureOfDance_correct_answer_7">Modern Dance</string>
+    <string name="natureOfDance_correct_answer_8">Ballroom Dance</string>
+    <string name="natureOfDance_correct_answer_9">Contemporary Dance</string>
+    <string name="natureOfDance_correct_answer_10">Festival Dance</string>
+
+
+
+
+
+
+
+    <string name="natureOfDanceHard_question_1">Hip-Hop is a set of partner dances which are enjoyed both socially and competitively around the world?</string>
+    <string name="natureOfDanceHard_question_2">Cheerdance is a combination of cheering and dancing?</string>
+    <string name="natureOfDanceHard_question_3">Regional folk dances are unique to certain localities only?</string>
+    <string name="natureOfDanceHard_question_4">This dance is a combination of arts of dancing, poetry, music, and painting?</string>
+    <string name="natureOfDanceHard_question_5">Customs and traditions through dance steps and costumes are preserved in festival dance?</string>
+    <string name="natureOfDanceHard_question_6">Gymnastics and acrobatic moves such as cartwheels and hand springs is a must for Cheerdance?</string>
+    <string name="natureOfDanceHard_question_7">Modern dance incorporates the strong legwork and balance of ballet and trunk movements of modern dance?</string>
+    <string name="natureOfDanceHard_question_8">There are 10 different nature of dances in the world?</string>
+    <string name="natureOfDanceHard_question_9">Festival dance are dances of indigenous communities that show cultural traits of people in specific time and place?</string>
+    <string name="natureOfDanceHard_question_10">According to geographical locations, folk dances can be classified as modern and contemporary type of dance?</string>
+    <string name="natureOfDanceHard_question_11">This are dances with common basic movements with slight variations?</string>
+    <string name="natureOfDanceHard_question_12">Contemporary dance is the style of dancing where dancers are free to express their feelings through movements?</string>
+    <string name="natureOfDanceHard_question_13">Folk dances may be religious or secular in nature?</string>
+    <string name="natureOfDanceHard_question_14">Ballroom is widely enjoyed on stage, film, and television because of its performance and entertainment aspects?</string>
+    <string name="natureOfDanceHard_question_15">This type of dance are unique to certain localities only?</string>
+    <string name="natureOfDanceHard_question_16">Ritual, Life-Cycle, and Occupational dance are examples of which nature of dance?</string>
+    <string name="natureOfDanceHard_question_17">Hip-Hop is a dance style performed to hip-hop music and usually dance in street?</string>
+    <string name="natureOfDanceHard_question_18">Folk dances are usually done in honor of a patron saint or as a thanksgiving for a bountiful harvest?</string>
+    <string name="natureOfDanceHard_question_19">Traditional dance are cultural dances performed to the strong beats of percussion instruments by a community of people sharing the same culture?</string>
+    <string name="natureOfDanceHard_question_20">Ballet is an artistic, programmatic, scenic dance accompanied by music?</string>
+
+    <!-- Choices -->
+    <string-array name="natureOfDanceHard_choices_1">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_2">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_3">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_4">
+        <item>Hip-Hop Dance</item>
+        <item>Cheer Dance</item>
+        <item>Ballet Dance</item>
+        <item>Ballroom Dance</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_5">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_6">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_7">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_8">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_9">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_10">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_11">
+        <item>National Folk Dance</item>
+        <item>Regional Folk Dance</item>
+        <item>Ritual Dance</item>
+        <item>Life-Cycle Dance</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_12">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_13">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_14">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_15">
+        <item>Regional Folk Dance</item>
+        <item>Ritual Dance</item>
+        <item>National Folk Dance</item>
+        <item>Occupational Dance</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_16">
+        <item>Folk Dance</item>
+        <item>Street Dance</item>
+        <item>Festival Dance</item>
+        <item>Contemporary Dance</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_17">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_18">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_19">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+    <string-array name="natureOfDanceHard_choices_20">
+        <item>True</item>
+        <item>Not True</item>
+        <item>False</item>
+        <item>Maybe</item>
+    </string-array>
+
+    <!-- Correct Answers -->
+    <string name="natureOfDanceHard_correct_answer_1">False</string>
+    <string name="natureOfDanceHard_correct_answer_2">True</string>
+    <string name="natureOfDanceHard_correct_answer_3">True</string>
+    <string name="natureOfDanceHard_correct_answer_4">Ballet Dance</string>
+    <string name="natureOfDanceHard_correct_answer_5">False</string>
+    <string name="natureOfDanceHard_correct_answer_6">True</string>
+    <string name="natureOfDanceHard_correct_answer_7">False</string>
+    <string name="natureOfDanceHard_correct_answer_8">False</string>
+    <string name="natureOfDanceHard_correct_answer_9">False</string>
+    <string name="natureOfDanceHard_correct_answer_10">False</string>
+    <string name="natureOfDanceHard_correct_answer_11">Regional Folk Dance</string>
+    <string name="natureOfDanceHard_correct_answer_12">False</string>
+    <string name="natureOfDanceHard_correct_answer_13">False</string>
+    <string name="natureOfDanceHard_correct_answer_14">True</string>
+    <string name="natureOfDanceHard_correct_answer_15">Regional Folk Dance</string>
+    <string name="natureOfDanceHard_correct_answer_16">Folk Dance</string>
+    <string name="natureOfDanceHard_correct_answer_17">True</string>
+    <string name="natureOfDanceHard_correct_answer_18">False</string>
+    <string name="natureOfDanceHard_correct_answer_19">False</string>
+    <string name="natureOfDanceHard_correct_answer_20">True</string>
+
+
+
+
+
+
+
+
+
 
 
     <string name="danceAs">Dance As:</string>
@@ -80,7 +885,7 @@
     <string name="benefitsOfDance_Physical">Physical</string>
     <string name="benefitsOfDance_PhysicalTopic">Develop cardiovascular endurance\n
     Improves coordination, balance, flexibility and body composition.\n
-    Lower risk cardiovascular disease.\m
+    Lower risk cardiovascular disease.\n
     Lower body mass index.\n
     Lower resting heart.\n
     Improves lipid metabolism.\n

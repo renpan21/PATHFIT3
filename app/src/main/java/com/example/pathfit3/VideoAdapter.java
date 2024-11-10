@@ -35,7 +35,7 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
     public void onBindViewHolder(@NonNull VideoViewHolder holder, int position) {
         VideoItem item = videoItems.get(position);
         holder.videoTitle.setText(item.getTitle());
-        holder.videoDescription.setText(item.getDescription());
+
 
         // Set up the VideoView
         holder.videoView.setVideoURI(Uri.parse(item.getUrl())); // Use the URL from VideoItem
@@ -77,13 +77,13 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
     static class VideoViewHolder extends RecyclerView.ViewHolder {
         VideoView videoView;
         TextView videoTitle;
-        TextView videoDescription;
+
 
         VideoViewHolder(@NonNull View itemView) {
             super(itemView);
             videoView = itemView.findViewById(R.id.video_view);
             videoTitle = itemView.findViewById(R.id.video_title);
-            videoDescription = itemView.findViewById(R.id.video_description);
+
         }
     }
 }

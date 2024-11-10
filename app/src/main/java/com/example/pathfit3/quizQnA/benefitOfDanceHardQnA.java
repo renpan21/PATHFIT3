@@ -1,72 +1,87 @@
 package com.example.pathfit3.quizQnA;
 
+import android.content.Context;
+import com.example.pathfit3.R;
+
 public class benefitOfDanceHardQnA {
-    public static String question[] = {
-            "Improves body coordination and flexibility", // 1
-            "Lower body mass index", // 2
-            "Helps keep the brain sharp", // 3
-            "Increase self esteem", // 4
-            "Improves body image", // 5
-            "Give sense of togetherness within a group", // 6
-            "Promotes cultural values", // 7
-            "Contribute to the individual’s self-actualization in society", // 8
-            "Decreases depressive symptoms", // 9
-            "Improve lipid metabolism", // 10
-            "Aids in releasing emotional and physical tension", // 11
-            "Lower resting heart rate", // 12
-            "Decrease incidence of Dementia and Alzheimer’s Disease", // 13
-            "Develop cardiovascular endurance", // 14
-            "Lower risks of cardiovascular diseases", // 15
-            "Encourages positive social interaction", // 16
-            "Enable joint mobility", // 17
-            "Helps improve and maintain bone density", // 18
-            "Encourages interpersonal relationships in group", // 19
-            "Improves balance and body composition" // 20
-    };
+    private Context context;
 
-    public static String choices[][] = {
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 1
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 2
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 3
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 4
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 5
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 6
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 7
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 8
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 9
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 10
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 11
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 12
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 13
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 14
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 15
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 16
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 17
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 18
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}, // 19
-            {"Physical", "Emotional/Mental", "Social", "Cultural"}  // 20
-    };
+    public benefitOfDanceHardQnA(Context context) {
+        this.context = context;
+    }
 
-    public static String correctAnswers[] = {
-            "Physical", // 1
-            "Physical", // 2
-            "Emotional/Mental", // 3
-            "Emotional/Mental", // 4
-            "Emotional/Mental", // 5
-            "Social", // 6
-            "Cultural", // 7
-            "Social", // 8
-            "Emotional/Mental", // 9
-            "Physical", // 10
-            "Emotional/Mental", // 11
-            "Physical", // 12
-            "Emotional/Mental", // 13
-            "Physical", // 14
-            "Physical", // 15
-            "Social", // 16
-            "Physical", // 17
-            "Physical", // 18
-            "Social", // 19
-            "Cultural" // 20
-    };
+    public String[] getQuestions() {
+        return new String[] {
+                context.getString(R.string.question_1_benefitDanceHard),
+                context.getString(R.string.question_2_benefitDanceHard),
+                context.getString(R.string.question_3_benefitDanceHard),
+                context.getString(R.string.question_4_benefitDanceHard),
+                context.getString(R.string.question_5_benefitDanceHard),
+                context.getString(R.string.question_6_benefitDanceHard),
+                context.getString(R.string.question_7_benefitDanceHard),
+                context.getString(R.string.question_8_benefitDanceHard),
+                context.getString(R.string.question_9_benefitDanceHard),
+                context.getString(R.string.question_10_benefitDanceHard),
+                context.getString(R.string.question_11_benefitDanceHard),
+                context.getString(R.string.question_12_benefitDanceHard),
+                context.getString(R.string.question_13_benefitDanceHard),
+                context.getString(R.string.question_14_benefitDanceHard),
+                context.getString(R.string.question_15_benefitDanceHard),
+                context.getString(R.string.question_16_benefitDanceHard),
+                context.getString(R.string.question_17_benefitDanceHard),
+                context.getString(R.string.question_18_benefitDanceHard),
+                context.getString(R.string.question_19_benefitDanceHard),
+                context.getString(R.string.question_20_benefitDanceHard)
+        };
+    }
+
+    public String[][] getChoices() {
+        return new String[][] {
+                context.getResources().getStringArray(R.array.choices_1_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_2_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_3_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_4_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_5_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_6_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_7_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_8_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_9_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_10_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_11_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_12_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_13_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_14_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_15_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_16_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_17_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_18_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_19_benefitDanceHard),
+                context.getResources().getStringArray(R.array.choices_20_benefitDanceHard)
+        };
+    }
+
+    public String[] getCorrectAnswers() {
+        return new String[] {
+                context.getString(R.string.correct_answer_1_benefitDanceHard),
+                context.getString(R.string.correct_answer_2_benefitDanceHard),
+                context.getString(R.string.correct_answer_3_benefitDanceHard),
+                context.getString(R.string.correct_answer_4_benefitDanceHard),
+                context.getString(R.string.correct_answer_5_benefitDanceHard),
+                context.getString(R.string.correct_answer_6_benefitDanceHard),
+                context.getString(R.string.correct_answer_7_benefitDanceHard),
+                context.getString(R.string.correct_answer_8_benefitDanceHard),
+                context.getString(R.string.correct_answer_9_benefitDanceHard),
+                context.getString(R.string.correct_answer_10_benefitDanceHard),
+                context.getString(R.string.correct_answer_11_benefitDanceHard),
+                context.getString(R.string.correct_answer_12_benefitDanceHard),
+                context.getString(R.string.correct_answer_13_benefitDanceHard),
+                context.getString(R.string.correct_answer_14_benefitDanceHard),
+                context.getString(R.string.correct_answer_15_benefitDanceHard),
+                context.getString(R.string.correct_answer_16_benefitDanceHard),
+                context.getString(R.string.correct_answer_17_benefitDanceHard),
+                context.getString(R.string.correct_answer_18_benefitDanceHard),
+                context.getString(R.string.correct_answer_19_benefitDanceHard),
+                context.getString(R.string.correct_answer_20_benefitDanceHard)
+        };
+    }
 }

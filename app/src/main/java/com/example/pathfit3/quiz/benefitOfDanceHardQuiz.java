@@ -16,7 +16,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.pathfit3.R;
-
 import com.example.pathfit3.quizQnA.benefitOfDanceHardQnA;
 
 import java.util.ArrayList;
@@ -40,6 +39,7 @@ public class benefitOfDanceHardQuiz extends AppCompatActivity implements View.On
     private CountDownTimer countDownTimer;
     private final long TIMER_DURATION = 61000;
     private final long TIMER_INTERVAL = 1000;
+    private benefitOfDanceHardQnA quizData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +62,13 @@ public class benefitOfDanceHardQuiz extends AppCompatActivity implements View.On
         ansD.setOnClickListener(this);
         submitBtn.setOnClickListener(this);
 
-        initializeQuestions();
+        // Initialize the quiz data
+        quizData = new benefitOfDanceHardQnA(this);
+        String[] questionsArray = quizData.getQuestions();
+        String[][] choicesArray = quizData.getChoices();
+        String[] correctAnswersArray = quizData.getCorrectAnswers();
+
+        initializeQuestions(questionsArray, choicesArray, correctAnswersArray);
         Collections.shuffle(questions);
         totalQuestions = questions.size();
 
@@ -74,6 +80,7 @@ public class benefitOfDanceHardQuiz extends AppCompatActivity implements View.On
             return insets;
         });
     }
+
     public void onClick(View view) {
         ansA.setBackgroundColor(Color.WHITE);
         ansB.setBackgroundColor(Color.WHITE);
@@ -115,7 +122,6 @@ public class benefitOfDanceHardQuiz extends AppCompatActivity implements View.On
     }
 
     void updateQuestionIndex() {
-        //nagsasabi kung pang ilang question na si user ex: total quest 1/10
         totalQuestionTxt.setText("Question " + (currQuestionIndex + 1) + " of " + totalQuestions);
     }
 
@@ -124,18 +130,18 @@ public class benefitOfDanceHardQuiz extends AppCompatActivity implements View.On
             countDownTimer.cancel();
         }
 
-        String passStatus = score > totalQuestions * 0.60 ? "Passed" : "Failed";
+        String passStatus = score > totalQuestions * 0.60 ? getString(R.string.dialog_title_passed) : getString(R.string.dialog_title_failed);
 
         new AlertDialog.Builder(this)
                 .setTitle(passStatus)
-                .setMessage("Score is " + score + " out of " + totalQuestions)
-                .setPositiveButton("Start Next Quiz", (dialogInterface, i) -> {
+                .setMessage(getString(R.string.dialog_message, score, totalQuestions))
+                .setPositiveButton(R.string.dialog_positive_button, (dialogInterface, i) -> {
                     Intent intent = new Intent(this, natureOfDanceQuizEz.class);
                     startActivity(intent);
                     finish();
                 })
-                .setNeutralButton("Restart Quiz", (dialogInterface, i) -> restartQuiz())
-                .setNegativeButton("Finish Quiz", (dialogInterface, i) -> finish())
+                .setNeutralButton(R.string.dialog_neutral_button, (dialogInterface, i) -> restartQuiz())
+                .setNegativeButton(R.string.dialog_negative_button, (dialogInterface, i) -> finish())
                 .setCancelable(false)
                 .show();
     }
@@ -159,14 +165,14 @@ public class benefitOfDanceHardQuiz extends AppCompatActivity implements View.On
         }
     }
 
-    private void initializeQuestions() {
+    private void initializeQuestions(String[] questionsArray, String[][] choicesArray, String[] correctAnswersArray) {
         questions = new ArrayList<>();
 
-        for (int i = 0; i < benefitOfDanceHardQnA.question.length; i++) {
+        for (int i = 0; i < questionsArray.length; i++) {
             questions.add(new Question(
-                    benefitOfDanceHardQnA.question[i],
-                    benefitOfDanceHardQnA.choices[i],
-                    benefitOfDanceHardQnA.correctAnswers[i]
+                    questionsArray[i],
+                    choicesArray[i],
+                    correctAnswersArray[i]
             ));
         }
     }

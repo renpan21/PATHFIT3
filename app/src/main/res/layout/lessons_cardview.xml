@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/prehistoric_Topic"
                 android:textSize="18sp"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
                 style="@style/textColorCloud"
                 android:layout_marginBottom="10dp"/>
 

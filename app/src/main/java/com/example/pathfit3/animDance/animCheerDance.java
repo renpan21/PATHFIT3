@@ -35,10 +35,9 @@ public class animCheerDance extends AppCompatActivity {
 
         // Sample video items
         List<VideoItem> videoItems = Arrays.asList(
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.cheerdance1, "Cheer Dance Step1", "Description for Step 1."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.cheerdance2, "Cheer Dance Step2", "Description for Step 2."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.cheerdance3, "Cheer Dance Step3", "Description for Step 3."),
-                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.cheerdance4, "Cheer Dance Step4", "Description for Step 4.")
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.cheerdance1, "Cheer Dance Step1"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.cheerdance3, "Cheer Dance Step2"),
+                new VideoItem("android.resource://" + getPackageName() + "/" + R.raw.cheerdance4, "Cheer Dance Step3")
 
         );
 

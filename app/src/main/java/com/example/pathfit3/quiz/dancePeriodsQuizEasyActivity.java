@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.pathfit3.R;
+ // Import the class
 import com.example.pathfit3.quizQnA.dancePeriodsQnAns;
 
 import java.util.ArrayList;
@@ -33,8 +34,8 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
 
     private List<Question> questions;
     private CountDownTimer countDownTimer;
-    private final long TIMER_DURATION = 61000;
-    private final long TIMER_INTERVAL = 1000;
+    private final long TIMER_DURATION = 61000; // 61 seconds
+    private final long TIMER_INTERVAL = 1000; // 1 second
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +57,13 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
         ansD.setOnClickListener(this);
         submitBtn.setOnClickListener(this);
 
-        initializeQuestions();
+        // Initialize questions from benefitOfDanceQnA
+        dancePeriodsQnAns quizData = new dancePeriodsQnAns(this);
+        String[] questionsArray = quizData.getQuestions();
+        String[][] choicesArray = quizData.getChoices();
+        String[] correctAnswersArray = quizData.getCorrectAnswers();
+
+        initializeQuestions(questionsArray, choicesArray, correctAnswersArray);
         Collections.shuffle(questions);
         totalQuestion = questions.size();
 
@@ -113,20 +120,21 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
             countDownTimer.cancel();
         }
 
-        String passStatus = score > totalQuestion * 0.60 ? "Passed" : "Failed";
+        String passStatus = score > totalQuestion * 0.60 ? getString(R.string.dialog_title_passed) : getString(R.string.dialog_title_failed);
 
         new AlertDialog.Builder(this)
                 .setTitle(passStatus)
-                .setMessage("Score is " + score + " out of " + totalQuestion)
-                .setPositiveButton("Start Next Quiz", (dialogInterface, i) -> {
+                .setMessage(getString(R.string.dialog_message, score, totalQuestion))
+                .setPositiveButton(R.string.dialog_positive_button, (dialogInterface, i) -> {
                     Intent intent = new Intent(this, quiz_dancePeriod_hard.class);
                     startActivity(intent);
                     finish();
                 })
-                .setNeutralButton("Restart Quiz", (dialogInterface, i) -> restartQuiz())
-                .setNegativeButton("Finish Quiz", (dialogInterface, i) -> finish())
+                .setNeutralButton(R.string.dialog_neutral_button, (dialogInterface, i) -> restartQuiz())
+                .setNegativeButton(R.string.dialog_negative_button, (dialogInterface, i) -> finish())
                 .setCancelable(false)
                 .show();
+
     }
 
     void restartQuiz() {
@@ -148,14 +156,14 @@ public class dancePeriodsQuizEasyActivity extends AppCompatActivity implements V
         }
     }
 
-    private void initializeQuestions() {
+    private void initializeQuestions(String[] questionsArray, String[][] choicesArray, String[] correctAnswersArray) {
         questions = new ArrayList<>();
 
-        for (int i = 0; i < dancePeriodsQnAns.question.length; i++) {
+        for (int i = 0; i < questionsArray.length; i++) {
             questions.add(new Question(
-                    dancePeriodsQnAns.question[i],
-                    dancePeriodsQnAns.choices[i],
-                    dancePeriodsQnAns.correctAnswers[i]
+                    questionsArray[i],
+                    choicesArray[i],
+                    correctAnswersArray[i]
             ));
         }
     }

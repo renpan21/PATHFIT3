@@ -30,7 +30,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/pathfitDesc"
-            android:text="Teaching you to dance"
+            android:text="@string/fragment_intro"
             style="@style/textColor"
 
             android:textSize="17sp"
@@ -71,16 +71,18 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 app:cardElevation="20dp"
+                style="@style/cardBackGround"
                 app:cardCornerRadius="20dp">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/clothingName"
-                        android:text="Lesson"
+                        android:text="@string/title_lesson"
                         android:textSize="20sp"
+                        android:textAlignment="center"
                         android:textColor="@color/pixelBlue"
                         android:fontFamily="@font/arvo"
                         android:layout_marginTop="10dp"
@@ -103,16 +105,18 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 app:cardElevation="20dp"
+                style="@style/cardBackGround"
                 app:cardCornerRadius="20dp">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/elecName"
-                        android:text="Tutorial"
+                        android:text="@string/title_tutorials"
                         android:textSize="20sp"
+                        android:textAlignment="center"
                         android:textColor="@color/pixelBlue"
                         android:fontFamily="@font/arvo"
                         android:layout_marginTop="10dp"
@@ -146,17 +150,19 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 app:cardElevation="20dp"
+                style="@style/cardBackGround"
                 app:cardCornerRadius="20dp">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/homeName"
                         android:text="Quiz"
                         android:textSize="20sp"
                         android:textColor="@color/pixelBlue"
+                        android:textAlignment="center"
                         android:fontFamily="@font/arvo"
                         android:layout_marginTop="10dp"
                         android:layout_centerHorizontal="true"
@@ -177,16 +183,18 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 app:cardElevation="20dp"
+                style="@style/cardBackGround"
                 app:cardCornerRadius="20dp">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/beautyName"
-                        android:text="About Us"
+                        android:text="@string/title_about"
                         android:textSize="20sp"
+                        android:textAlignment="center"
                         android:textColor="@color/pixelBlue"
                         android:fontFamily="@font/arvo"
                         android:layout_marginTop="10dp"

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,48 +8,54 @@
     tools:context=".startupPanel"
     style="@style/screenBackGround">
 
-
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/txtStartUp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="WELCOME!"
+        android:text="@string/startUp"
         android:textSize="35sp"
         style="@style/textColor"
-        android:layout_marginTop="90dp"
-        android:layout_marginLeft="20dp"
         android:fontFamily="@font/tsukishimi_rounded"
-        />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.2"/>
+
     <TextView
         android:id="@+id/txtReadyToDance"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        style="@style/textColor"
-        android:text="Ready To Dance?"
+        android:text="@string/startUp1"
         android:textSize="35sp"
-        android:layout_marginTop="135dp"
-        android:layout_marginLeft="55dp"
+        style="@style/textColor"
         android:fontFamily="@font/tsukishimi_rounded"
-        />
+        app:layout_constraintTop_toBottomOf="@id/txtStartUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.1"/>
 
     <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_below="@id/txtReadyToDance"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="27dp"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/lottie_height"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/man_dancing" />
+        app:lottie_rawRes="@raw/man_dancing"
+        app:layout_constraintTop_toBottomOf="@id/txtReadyToDance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnGetStarted"
+        app:layout_constraintVertical_bias="0.1"/>
 
     <Button
+        android:id="@+id/btnGetStarted"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
         style="@style/buttonColor"
-        android:layout_marginBottom="50dp"
         android:text="Get Started"
         android:textColor="@color/darkSpace"
-        android:id="@+id/btnGetStarted" />
-
-</RelativeLayout>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        android:layout_marginBottom="50dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
